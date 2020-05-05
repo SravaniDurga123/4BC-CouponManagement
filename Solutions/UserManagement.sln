@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CouponManagementDBEntity", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SHR_Model", "..\SHR_Model\SHR_Model.csproj", "{CD594D2B-3560-433C-9772-89AA87389387}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUser", "..\TestUser\TestUser.csproj", "{692DD7D6-AB1F-41AA-8B4C-0817C3CC66BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CouponManagementTestCase", "..\TST_UserManagement\CouponManagementTestCase.csproj", "{8C013FD4-13A0-47B5-9CC0-16E07EAD113A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{CD594D2B-3560-433C-9772-89AA87389387}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD594D2B-3560-433C-9772-89AA87389387}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD594D2B-3560-433C-9772-89AA87389387}.Release|Any CPU.Build.0 = Release|Any CPU
-		{692DD7D6-AB1F-41AA-8B4C-0817C3CC66BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{692DD7D6-AB1F-41AA-8B4C-0817C3CC66BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{692DD7D6-AB1F-41AA-8B4C-0817C3CC66BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{692DD7D6-AB1F-41AA-8B4C-0817C3CC66BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C013FD4-13A0-47B5-9CC0-16E07EAD113A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C013FD4-13A0-47B5-9CC0-16E07EAD113A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C013FD4-13A0-47B5-9CC0-16E07EAD113A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C013FD4-13A0-47B5-9CC0-16E07EAD113A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
