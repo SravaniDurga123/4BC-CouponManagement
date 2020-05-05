@@ -2,69 +2,6 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "IKVM/8.1.5717": {
-        "type": "package",
-        "compile": {
-          "lib/IKVM.AWT.WinForms.dll": {},
-          "lib/IKVM.OpenJDK.Beans.dll": {},
-          "lib/IKVM.OpenJDK.Charsets.dll": {},
-          "lib/IKVM.OpenJDK.Cldrdata.dll": {},
-          "lib/IKVM.OpenJDK.Corba.dll": {},
-          "lib/IKVM.OpenJDK.Core.dll": {},
-          "lib/IKVM.OpenJDK.Jdbc.dll": {},
-          "lib/IKVM.OpenJDK.Localedata.dll": {},
-          "lib/IKVM.OpenJDK.Management.dll": {},
-          "lib/IKVM.OpenJDK.Media.dll": {},
-          "lib/IKVM.OpenJDK.Misc.dll": {},
-          "lib/IKVM.OpenJDK.Naming.dll": {},
-          "lib/IKVM.OpenJDK.Nashorn.dll": {},
-          "lib/IKVM.OpenJDK.Remoting.dll": {},
-          "lib/IKVM.OpenJDK.Security.dll": {},
-          "lib/IKVM.OpenJDK.SwingAWT.dll": {},
-          "lib/IKVM.OpenJDK.Text.dll": {},
-          "lib/IKVM.OpenJDK.Tools.dll": {},
-          "lib/IKVM.OpenJDK.Util.dll": {},
-          "lib/IKVM.OpenJDK.XML.API.dll": {},
-          "lib/IKVM.OpenJDK.XML.Bind.dll": {},
-          "lib/IKVM.OpenJDK.XML.Crypto.dll": {},
-          "lib/IKVM.OpenJDK.XML.Parse.dll": {},
-          "lib/IKVM.OpenJDK.XML.Transform.dll": {},
-          "lib/IKVM.OpenJDK.XML.WebServices.dll": {},
-          "lib/IKVM.OpenJDK.XML.XPath.dll": {},
-          "lib/IKVM.Runtime.JNI.dll": {},
-          "lib/IKVM.Runtime.dll": {}
-        },
-        "runtime": {
-          "lib/IKVM.AWT.WinForms.dll": {},
-          "lib/IKVM.OpenJDK.Beans.dll": {},
-          "lib/IKVM.OpenJDK.Charsets.dll": {},
-          "lib/IKVM.OpenJDK.Cldrdata.dll": {},
-          "lib/IKVM.OpenJDK.Corba.dll": {},
-          "lib/IKVM.OpenJDK.Core.dll": {},
-          "lib/IKVM.OpenJDK.Jdbc.dll": {},
-          "lib/IKVM.OpenJDK.Localedata.dll": {},
-          "lib/IKVM.OpenJDK.Management.dll": {},
-          "lib/IKVM.OpenJDK.Media.dll": {},
-          "lib/IKVM.OpenJDK.Misc.dll": {},
-          "lib/IKVM.OpenJDK.Naming.dll": {},
-          "lib/IKVM.OpenJDK.Nashorn.dll": {},
-          "lib/IKVM.OpenJDK.Remoting.dll": {},
-          "lib/IKVM.OpenJDK.Security.dll": {},
-          "lib/IKVM.OpenJDK.SwingAWT.dll": {},
-          "lib/IKVM.OpenJDK.Text.dll": {},
-          "lib/IKVM.OpenJDK.Tools.dll": {},
-          "lib/IKVM.OpenJDK.Util.dll": {},
-          "lib/IKVM.OpenJDK.XML.API.dll": {},
-          "lib/IKVM.OpenJDK.XML.Bind.dll": {},
-          "lib/IKVM.OpenJDK.XML.Crypto.dll": {},
-          "lib/IKVM.OpenJDK.XML.Parse.dll": {},
-          "lib/IKVM.OpenJDK.XML.Transform.dll": {},
-          "lib/IKVM.OpenJDK.XML.WebServices.dll": {},
-          "lib/IKVM.OpenJDK.XML.XPath.dll": {},
-          "lib/IKVM.Runtime.JNI.dll": {},
-          "lib/IKVM.Runtime.dll": {}
-        }
-      },
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -439,25 +376,6 @@
           "lib/netstandard1.3/Microsoft.DotNet.InternalAbstractions.dll": {}
         }
       },
-      "Microsoft.DotNet.PlatformAbstractions/2.0.4": {
-        "type": "package",
-        "dependencies": {
-          "System.AppContext": "4.1.0",
-          "System.Collections": "4.0.11",
-          "System.IO": "4.1.0",
-          "System.IO.FileSystem": "4.0.1",
-          "System.Reflection.TypeExtensions": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Runtime.InteropServices": "4.1.0",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0"
-        },
-        "compile": {
-          "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {}
-        }
-      },
       "Microsoft.EntityFrameworkCore/3.1.3": {
         "type": "package",
         "dependencies": {
@@ -615,22 +533,6 @@
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyModel/2.0.4": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.DotNet.PlatformAbstractions": "2.0.4",
-          "Newtonsoft.Json": "9.0.1",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Dynamic.Runtime": "4.0.11",
-          "System.Linq": "4.1.0"
-        },
-        "compile": {
-          "lib/netstandard1.6/Microsoft.Extensions.DependencyModel.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.6/Microsoft.Extensions.DependencyModel.dll": {}
-        }
-      },
       "Microsoft.Extensions.Logging/3.1.3": {
         "type": "package",
         "dependencies": {
@@ -666,19 +568,6 @@
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.Extensions.Options.dll": {}
-        }
-      },
-      "Microsoft.Extensions.PlatformAbstractions/1.1.0": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "System.Reflection.TypeExtensions": "4.3.0"
-        },
-        "compile": {
-          "lib/netstandard1.3/Microsoft.Extensions.PlatformAbstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/Microsoft.Extensions.PlatformAbstractions.dll": {}
         }
       },
       "Microsoft.Extensions.Primitives/3.1.3": {
@@ -1129,24 +1018,6 @@
           }
         }
       },
-      "Nancy/2.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.DependencyModel": "2.0.4",
-          "Microsoft.Extensions.PlatformAbstractions": "1.1.0",
-          "System.Collections.Specialized": "4.3.0",
-          "System.ComponentModel.TypeConverter": "4.3.0",
-          "System.Net.NameResolution": "4.3.0",
-          "System.Security.Claims": "4.3.0",
-          "System.Xml.XmlSerializer": "4.3.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Nancy.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Nancy.dll": {}
-        }
-      },
       "NETStandard.Library/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -1396,7 +1267,7 @@
           "System.Threading": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Collections.Specialized.dll": {}
+          "ref/netstandard1.3/_._": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Collections.Specialized.dll": {}
@@ -1690,32 +1561,6 @@
           "ref/netstandard1.5/_._": {}
         }
       },
-      "System.Dynamic.Runtime/4.0.11": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.0.11",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Globalization": "4.0.11",
-          "System.Linq": "4.1.0",
-          "System.Linq.Expressions": "4.1.0",
-          "System.ObjectModel": "4.0.12",
-          "System.Reflection": "4.1.0",
-          "System.Reflection.Emit": "4.0.1",
-          "System.Reflection.Emit.ILGeneration": "4.0.1",
-          "System.Reflection.Primitives": "4.0.1",
-          "System.Reflection.TypeExtensions": "4.1.0",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Threading": "4.0.11"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Dynamic.Runtime.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.Dynamic.Runtime.dll": {}
-        }
-      },
       "System.Globalization/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1864,7 +1709,7 @@
           "runtime.native.System": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Net.NameResolution.dll": {}
+          "ref/netstandard1.3/_._": {}
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netstandard1.3/System.Net.NameResolution.dll": {
@@ -1886,7 +1731,7 @@
           "System.Runtime.Handles": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Net.Primitives.dll": {}
+          "ref/netstandard1.3/_._": {}
         }
       },
       "System.ObjectModel/4.3.0": {
@@ -2225,24 +2070,6 @@
           }
         }
       },
-      "System.Security.Claims/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Security.Principal": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Security.Claims.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.Security.Claims.dll": {}
-        }
-      },
       "System.Security.Cryptography.Primitives/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2286,18 +2113,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Security.Permissions.dll": {}
-        }
-      },
-      "System.Security.Principal/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.0/System.Security.Principal.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/System.Security.Principal.dll": {}
         }
       },
       "System.Security.Principal.Windows/4.5.0": {
@@ -2561,7 +2376,7 @@
           "System.Xml.XmlDocument": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Xml.XmlSerializer.dll": {}
+          "ref/netstandard1.3/_._": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
@@ -2637,9 +2452,7 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "CouponManagementDBEntity": "1.0.0",
-          "IKVM": "8.1.5717",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.2",
-          "Nancy": "2.0.0",
           "Newtonsoft.Json": "12.0.3",
           "SHR_Model": "1.0.0",
           "Swashbuckle.AspNetCore": "5.4.0"
@@ -2657,52 +2470,6 @@
     }
   },
   "libraries": {
-    "IKVM/8.1.5717": {
-      "sha512": "5olx8s2XYTfu6xu59ozQi9Jz5s6IHdJTK+XEFKpPxxVHoQWphb2G78btQTu1Z69I18n0tpcJ/EK5Dg2wmHJQIA==",
-      "type": "package",
-      "path": "ikvm/8.1.5717",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE",
-        "THIRD_PARTY_README",
-        "TRADEMARK",
-        "ikvm.8.1.5717.nupkg.sha512",
-        "ikvm.nuspec",
-        "lib/IKVM.AWT.WinForms.dll",
-        "lib/IKVM.OpenJDK.Beans.dll",
-        "lib/IKVM.OpenJDK.Charsets.dll",
-        "lib/IKVM.OpenJDK.Cldrdata.dll",
-        "lib/IKVM.OpenJDK.Corba.dll",
-        "lib/IKVM.OpenJDK.Core.dll",
-        "lib/IKVM.OpenJDK.Jdbc.dll",
-        "lib/IKVM.OpenJDK.Localedata.dll",
-        "lib/IKVM.OpenJDK.Management.dll",
-        "lib/IKVM.OpenJDK.Media.dll",
-        "lib/IKVM.OpenJDK.Misc.dll",
-        "lib/IKVM.OpenJDK.Naming.dll",
-        "lib/IKVM.OpenJDK.Nashorn.dll",
-        "lib/IKVM.OpenJDK.Remoting.dll",
-        "lib/IKVM.OpenJDK.Security.dll",
-        "lib/IKVM.OpenJDK.SwingAWT.dll",
-        "lib/IKVM.OpenJDK.Text.dll",
-        "lib/IKVM.OpenJDK.Tools.dll",
-        "lib/IKVM.OpenJDK.Util.dll",
-        "lib/IKVM.OpenJDK.XML.API.dll",
-        "lib/IKVM.OpenJDK.XML.Bind.dll",
-        "lib/IKVM.OpenJDK.XML.Crypto.dll",
-        "lib/IKVM.OpenJDK.XML.Parse.dll",
-        "lib/IKVM.OpenJDK.XML.Transform.dll",
-        "lib/IKVM.OpenJDK.XML.WebServices.dll",
-        "lib/IKVM.OpenJDK.XML.XPath.dll",
-        "lib/IKVM.Runtime.JNI.dll",
-        "lib/IKVM.Runtime.dll",
-        "x64/lib/JVM.DLL",
-        "x64/lib/ikvm-native-win32-x64.dll",
-        "x86/lib/JVM.DLL",
-        "x86/lib/ikvm-native-win32-x86.dll"
-      ]
-    },
     "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
       "sha512": "Y4rs5aMEXY8G7wJo5S3EEt6ltqyOTr/qOeZzfn+hw/fuQj5GppGckMY5psGLETo1U9hcT5MmAhaT5xtusM1b5g==",
       "type": "package",
@@ -3163,21 +2930,6 @@
         "microsoft.dotnet.internalabstractions.nuspec"
       ]
     },
-    "Microsoft.DotNet.PlatformAbstractions/2.0.4": {
-      "sha512": "2HjSGp63VCLQaeGadrLYR868g25mJHr+TFF81yWCaClzjUbU2vNDx6km7SUgPnoLVksE/1e7in88eh+oPtc4aQ==",
-      "type": "package",
-      "path": "microsoft.dotnet.platformabstractions/2.0.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net45/Microsoft.DotNet.PlatformAbstractions.dll",
-        "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll",
-        "microsoft.dotnet.platformabstractions.2.0.4.nupkg.sha512",
-        "microsoft.dotnet.platformabstractions.nuspec"
-      ]
-    },
     "Microsoft.EntityFrameworkCore/3.1.3": {
       "sha512": "+LyCAQqSxBhorS0xz6gH0AXR05JkSz4L/Dn7ZgMvwMxAqYMSzMso0nHUv4PJbWI5sgjHxYCTFf0JeNLi/8ctpg==",
       "type": "package",
@@ -3389,22 +3141,6 @@
         "microsoft.extensions.dependencyinjection.abstractions.nuspec"
       ]
     },
-    "Microsoft.Extensions.DependencyModel/2.0.4": {
-      "sha512": "jnHAeijsfJFQXdXmnYK/NhQIkgBUeth//RZZkf0ldIKC+jARbf7YxbA9uTrs/EPhuQxHXaDxVuMyscgmL+UqfA==",
-      "type": "package",
-      "path": "microsoft.extensions.dependencymodel/2.0.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net451/Microsoft.Extensions.DependencyModel.dll",
-        "lib/netstandard1.3/Microsoft.Extensions.DependencyModel.dll",
-        "lib/netstandard1.6/Microsoft.Extensions.DependencyModel.dll",
-        "microsoft.extensions.dependencymodel.2.0.4.nupkg.sha512",
-        "microsoft.extensions.dependencymodel.nuspec"
-      ]
-    },
     "Microsoft.Extensions.Logging/3.1.3": {
       "sha512": "mAuOMhgB73dgVYeJzrksGU6BUBr7vIruFJyxssYK1nmDS+ude0kShILrXPq2iGHOvYNacczW4VSa6zcssUh4iQ==",
       "type": "package",
@@ -3449,21 +3185,6 @@
         "lib/netstandard2.0/Microsoft.Extensions.Options.xml",
         "microsoft.extensions.options.3.1.3.nupkg.sha512",
         "microsoft.extensions.options.nuspec"
-      ]
-    },
-    "Microsoft.Extensions.PlatformAbstractions/1.1.0": {
-      "sha512": "H6ZsQzxYw/6k2DfEQRXdC+vQ6obd6Uba3uGJrnJ2vG4PRXjQZ7seB13JdCfE72abp8E6Fk3gGgDzfJiLZi5ZpQ==",
-      "type": "package",
-      "path": "microsoft.extensions.platformabstractions/1.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net451/Microsoft.Extensions.PlatformAbstractions.dll",
-        "lib/net451/Microsoft.Extensions.PlatformAbstractions.xml",
-        "lib/netstandard1.3/Microsoft.Extensions.PlatformAbstractions.dll",
-        "lib/netstandard1.3/Microsoft.Extensions.PlatformAbstractions.xml",
-        "microsoft.extensions.platformabstractions.1.1.0.nupkg.sha512",
-        "microsoft.extensions.platformabstractions.nuspec"
       ]
     },
     "Microsoft.Extensions.Primitives/3.1.3": {
@@ -4300,21 +4021,6 @@
         "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "Nancy/2.0.0": {
-      "sha512": "z2GMxQFbDbxqzCfkomyeqLNXW4G2NdvU727HBaP+QQ0/hm1jw9PTqHyzoB2M9aKeC5AKYmQmt9GvwR5CHL/ReA==",
-      "type": "package",
-      "path": "nancy/2.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net452/Nancy.dll",
-        "lib/net452/Nancy.xml",
-        "lib/netstandard2.0/Nancy.dll",
-        "lib/netstandard2.0/Nancy.xml",
-        "nancy.2.0.0.nupkg.sha512",
-        "nancy.nuspec"
       ]
     },
     "NETStandard.Library/2.0.0": {
@@ -5692,77 +5398,6 @@
         "ref/xamarinwatchos10/_._",
         "system.diagnostics.tracing.4.3.0.nupkg.sha512",
         "system.diagnostics.tracing.nuspec"
-      ]
-    },
-    "System.Dynamic.Runtime/4.0.11": {
-      "sha512": "db34f6LHYM0U0JpE+sOmjar27BnqTVkbLJhgfwMpTdgTigG/Hna3m2MYVwnFzGGKnEJk2UXFuoVTr8WUbU91/A==",
-      "type": "package",
-      "path": "system.dynamic.runtime/4.0.11",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/netcore50/System.Dynamic.Runtime.dll",
-        "lib/netstandard1.3/System.Dynamic.Runtime.dll",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/netcore50/System.Dynamic.Runtime.dll",
-        "ref/netcore50/System.Dynamic.Runtime.xml",
-        "ref/netcore50/de/System.Dynamic.Runtime.xml",
-        "ref/netcore50/es/System.Dynamic.Runtime.xml",
-        "ref/netcore50/fr/System.Dynamic.Runtime.xml",
-        "ref/netcore50/it/System.Dynamic.Runtime.xml",
-        "ref/netcore50/ja/System.Dynamic.Runtime.xml",
-        "ref/netcore50/ko/System.Dynamic.Runtime.xml",
-        "ref/netcore50/ru/System.Dynamic.Runtime.xml",
-        "ref/netcore50/zh-hans/System.Dynamic.Runtime.xml",
-        "ref/netcore50/zh-hant/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/System.Dynamic.Runtime.dll",
-        "ref/netstandard1.0/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/de/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/es/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/fr/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/it/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/ja/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/ko/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/ru/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/zh-hans/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.0/zh-hant/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/System.Dynamic.Runtime.dll",
-        "ref/netstandard1.3/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/de/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/es/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/fr/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/it/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/ja/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/ko/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/ru/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/zh-hans/System.Dynamic.Runtime.xml",
-        "ref/netstandard1.3/zh-hant/System.Dynamic.Runtime.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/aot/lib/netcore50/System.Dynamic.Runtime.dll",
-        "system.dynamic.runtime.4.0.11.nupkg.sha512",
-        "system.dynamic.runtime.nuspec"
       ]
     },
     "System.Globalization/4.3.0": {
@@ -7470,45 +7105,6 @@
         "version.txt"
       ]
     },
-    "System.Security.Claims/4.3.0": {
-      "sha512": "P/+BR/2lnc4PNDHt/TPBAWHVMLMRHsyYZbU1NphW4HIWzCggz8mJbTQQ3MKljFE7LS3WagmVFuBgoLcFzYXlkA==",
-      "type": "package",
-      "path": "system.security.claims/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Security.Claims.dll",
-        "lib/netstandard1.3/System.Security.Claims.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.Security.Claims.dll",
-        "ref/netstandard1.3/System.Security.Claims.dll",
-        "ref/netstandard1.3/System.Security.Claims.xml",
-        "ref/netstandard1.3/de/System.Security.Claims.xml",
-        "ref/netstandard1.3/es/System.Security.Claims.xml",
-        "ref/netstandard1.3/fr/System.Security.Claims.xml",
-        "ref/netstandard1.3/it/System.Security.Claims.xml",
-        "ref/netstandard1.3/ja/System.Security.Claims.xml",
-        "ref/netstandard1.3/ko/System.Security.Claims.xml",
-        "ref/netstandard1.3/ru/System.Security.Claims.xml",
-        "ref/netstandard1.3/zh-hans/System.Security.Claims.xml",
-        "ref/netstandard1.3/zh-hant/System.Security.Claims.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.security.claims.4.3.0.nupkg.sha512",
-        "system.security.claims.nuspec"
-      ]
-    },
     "System.Security.Cryptography.Primitives/4.3.0": {
       "sha512": "7bDIyVFNL/xKeFHjhobUAQqSpJq9YTOpbEs6mR233Et01STBMXNAc/V+BM6dwYGc95gVh/Zf+iVXWzj3mE8DWg==",
       "type": "package",
@@ -7598,65 +7194,6 @@
         "system.security.permissions.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "System.Security.Principal/4.3.0": {
-      "sha512": "I1tkfQlAoMM2URscUtpcRo/hX0jinXx6a/KUtEQoz3owaYwl3qwsO8cbzYVVnjxrzxjHo3nJC+62uolgeGIS9A==",
-      "type": "package",
-      "path": "system.security.principal/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/netcore50/System.Security.Principal.dll",
-        "lib/netstandard1.0/System.Security.Principal.dll",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/netcore50/System.Security.Principal.dll",
-        "ref/netcore50/System.Security.Principal.xml",
-        "ref/netcore50/de/System.Security.Principal.xml",
-        "ref/netcore50/es/System.Security.Principal.xml",
-        "ref/netcore50/fr/System.Security.Principal.xml",
-        "ref/netcore50/it/System.Security.Principal.xml",
-        "ref/netcore50/ja/System.Security.Principal.xml",
-        "ref/netcore50/ko/System.Security.Principal.xml",
-        "ref/netcore50/ru/System.Security.Principal.xml",
-        "ref/netcore50/zh-hans/System.Security.Principal.xml",
-        "ref/netcore50/zh-hant/System.Security.Principal.xml",
-        "ref/netstandard1.0/System.Security.Principal.dll",
-        "ref/netstandard1.0/System.Security.Principal.xml",
-        "ref/netstandard1.0/de/System.Security.Principal.xml",
-        "ref/netstandard1.0/es/System.Security.Principal.xml",
-        "ref/netstandard1.0/fr/System.Security.Principal.xml",
-        "ref/netstandard1.0/it/System.Security.Principal.xml",
-        "ref/netstandard1.0/ja/System.Security.Principal.xml",
-        "ref/netstandard1.0/ko/System.Security.Principal.xml",
-        "ref/netstandard1.0/ru/System.Security.Principal.xml",
-        "ref/netstandard1.0/zh-hans/System.Security.Principal.xml",
-        "ref/netstandard1.0/zh-hant/System.Security.Principal.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.security.principal.4.3.0.nupkg.sha512",
-        "system.security.principal.nuspec"
       ]
     },
     "System.Security.Principal.Windows/4.5.0": {
@@ -8632,11 +8169,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\CouponManagement\\TestUser\\TestUser.csproj",
+      "projectUniqueName": "C:\\Users\\Maragani jagadeesh\\Contacts\\Desktop\\CasrStudy@CouponManagement\\CouponsManagement\\TestUser\\TestUser.csproj",
       "projectName": "TestUser",
-      "projectPath": "E:\\CouponManagement\\TestUser\\TestUser.csproj",
+      "projectPath": "C:\\Users\\Maragani jagadeesh\\Contacts\\Desktop\\CasrStudy@CouponManagement\\CouponsManagement\\TestUser\\TestUser.csproj",
       "packagesPath": "C:\\Users\\Maragani jagadeesh\\.nuget\\packages\\",
-      "outputPath": "E:\\CouponManagement\\TestUser\\obj\\",
+      "outputPath": "C:\\Users\\Maragani jagadeesh\\Contacts\\Desktop\\CasrStudy@CouponManagement\\CouponsManagement\\TestUser\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Maragani jagadeesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8652,14 +8189,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "E:\\CouponManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj": {
-              "projectPath": "E:\\CouponManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj"
+            "C:\\Users\\Maragani jagadeesh\\Contacts\\Desktop\\CasrStudy@CouponManagement\\CouponsManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj": {
+              "projectPath": "C:\\Users\\Maragani jagadeesh\\Contacts\\Desktop\\CasrStudy@CouponManagement\\CouponsManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj"
             },
-            "E:\\CouponManagement\\SHR_Model\\SHR_Model.csproj": {
-              "projectPath": "E:\\CouponManagement\\SHR_Model\\SHR_Model.csproj"
+            "C:\\Users\\Maragani jagadeesh\\Contacts\\Desktop\\CasrStudy@CouponManagement\\CouponsManagement\\SHR_Model\\SHR_Model.csproj": {
+              "projectPath": "C:\\Users\\Maragani jagadeesh\\Contacts\\Desktop\\CasrStudy@CouponManagement\\CouponsManagement\\SHR_Model\\SHR_Model.csproj"
             },
-            "E:\\CouponManagement\\SVC_UserManagement\\UserManagement.csproj": {
-              "projectPath": "E:\\CouponManagement\\SVC_UserManagement\\UserManagement.csproj"
+            "C:\\Users\\Maragani jagadeesh\\Contacts\\Desktop\\CasrStudy@CouponManagement\\CouponsManagement\\SVC_UserManagement\\UserManagement.csproj": {
+              "projectPath": "C:\\Users\\Maragani jagadeesh\\Contacts\\Desktop\\CasrStudy@CouponManagement\\CouponsManagement\\SVC_UserManagement\\UserManagement.csproj"
             }
           }
         }
@@ -8707,17 +8244,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'IKVM 8.1.5717' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "IKVM",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }

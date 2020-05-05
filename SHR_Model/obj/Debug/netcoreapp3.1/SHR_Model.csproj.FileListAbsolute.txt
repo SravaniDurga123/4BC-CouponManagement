@@ -6,3 +6,12 @@ E:\CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.AssemblyInfoInpu
 E:\CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.AssemblyInfo.cs
 E:\CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.dll
 E:\CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.pdb
+C:\Users\Maragani jagadeesh\Contacts\Desktop\CasrStudy@CouponManagement\CouponsManagement\SHR_Model\bin\Debug\netcoreapp3.1\SHR_Model.deps.json
+C:\Users\Maragani jagadeesh\Contacts\Desktop\CasrStudy@CouponManagement\CouponsManagement\SHR_Model\bin\Debug\netcoreapp3.1\SHR_Model.dll
+C:\Users\Maragani jagadeesh\Contacts\Desktop\CasrStudy@CouponManagement\CouponsManagement\SHR_Model\bin\Debug\netcoreapp3.1\SHR_Model.pdb
+C:\Users\Maragani jagadeesh\Contacts\Desktop\CasrStudy@CouponManagement\CouponsManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.csprojAssemblyReference.cache
+C:\Users\Maragani jagadeesh\Contacts\Desktop\CasrStudy@CouponManagement\CouponsManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.csproj.CoreCompileInputs.cache
+C:\Users\Maragani jagadeesh\Contacts\Desktop\CasrStudy@CouponManagement\CouponsManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.AssemblyInfoInputs.cache
+C:\Users\Maragani jagadeesh\Contacts\Desktop\CasrStudy@CouponManagement\CouponsManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.AssemblyInfo.cs
+C:\Users\Maragani jagadeesh\Contacts\Desktop\CasrStudy@CouponManagement\CouponsManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.dll
+C:\Users\Maragani jagadeesh\Contacts\Desktop\CasrStudy@CouponManagement\CouponsManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.pdb

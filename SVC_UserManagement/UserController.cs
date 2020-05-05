@@ -7,7 +7,6 @@ using CouponManagementDBEntity.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using Nancy.Json;
 using SHR_Model.Models;
 using UserManagement.Helper;
 

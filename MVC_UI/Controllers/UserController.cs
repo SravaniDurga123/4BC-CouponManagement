@@ -12,6 +12,18 @@ namespace MVC_UI.Controllers
 {
     public class UserController : Controller
     {
-      
+        public async Task<IActionResult> GetUsers()
+        {
+            List<UserDetails> userDetails = new List<UserDetails>();
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync("http://localhost:50443/api/v1/GetAllUsers"))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    userDetails = JsonConvert.DeserializeObject<List<UserDetails>>(apiResponse);
+                }
+            }
+            return View(userDetails);
+        }
     }
 }
