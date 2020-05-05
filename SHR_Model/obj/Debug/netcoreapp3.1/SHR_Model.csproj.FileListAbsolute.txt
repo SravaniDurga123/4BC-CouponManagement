@@ -1,0 +1,8 @@
+E:\CouponManagement\SHR_Model\bin\Debug\netcoreapp3.1\SHR_Model.deps.json
+E:\CouponManagement\SHR_Model\bin\Debug\netcoreapp3.1\SHR_Model.dll
+E:\CouponManagement\SHR_Model\bin\Debug\netcoreapp3.1\SHR_Model.pdb
+E:\CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.csproj.CoreCompileInputs.cache
+E:\CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.AssemblyInfoInputs.cache
+E:\CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.AssemblyInfo.cs
+E:\CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.dll
+E:\CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.pdb
