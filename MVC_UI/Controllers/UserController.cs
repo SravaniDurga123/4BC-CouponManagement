@@ -40,7 +40,26 @@ namespace MVC_UI.Controllers
             return View(user);
         }
 
+        public async Task<IActionResult> UserRegister()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> UserRegister(UserDetails user)
+        {
+            UserDetails user1 = new UserDetails();
+            using (var httpClient = new HttpClient())
+            {
+                StringContent content = new StringContent(JsonConvert.SerializeObject(user), Encoding.UTF8, "application/json");
 
+                using (var response = await httpClient.PostAsync("http://localhost:50443/api/v1/UserRegister/", content))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    //user1 = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
+                }
+            }
+            return RedirectToAction("GetUsers");
+        }
 
 
 
