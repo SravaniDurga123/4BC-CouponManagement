@@ -51,3 +51,12 @@ G:\4BC-CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.AssemblyInfo
 G:\4BC-CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.AssemblyInfo.cs
 G:\4BC-CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.dll
 G:\4BC-CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.pdb
+C:\Users\Maragani jagadeesh\Contacts\Desktop\CoupounManagement\4BC-CouponManagement\SHR_Model\bin\Debug\netcoreapp3.1\SHR_Model.deps.json
+C:\Users\Maragani jagadeesh\Contacts\Desktop\CoupounManagement\4BC-CouponManagement\SHR_Model\bin\Debug\netcoreapp3.1\SHR_Model.dll
+C:\Users\Maragani jagadeesh\Contacts\Desktop\CoupounManagement\4BC-CouponManagement\SHR_Model\bin\Debug\netcoreapp3.1\SHR_Model.pdb
+C:\Users\Maragani jagadeesh\Contacts\Desktop\CoupounManagement\4BC-CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.csprojAssemblyReference.cache
+C:\Users\Maragani jagadeesh\Contacts\Desktop\CoupounManagement\4BC-CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.csproj.CoreCompileInputs.cache
+C:\Users\Maragani jagadeesh\Contacts\Desktop\CoupounManagement\4BC-CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.AssemblyInfoInputs.cache
+C:\Users\Maragani jagadeesh\Contacts\Desktop\CoupounManagement\4BC-CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.AssemblyInfo.cs
+C:\Users\Maragani jagadeesh\Contacts\Desktop\CoupounManagement\4BC-CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.dll
+C:\Users\Maragani jagadeesh\Contacts\Desktop\CoupounManagement\4BC-CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.pdb
