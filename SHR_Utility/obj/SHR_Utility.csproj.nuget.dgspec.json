@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\4BC-CouponManagement\\TST_UserManagement\\CouponManagementTestCase.csproj": {}
+    "G:\\4BC-CouponManagement\\SHR_Utility\\SHR_Utility.csproj": {}
   },
   "projects": {
-    "G:\\4BC-CouponManagement\\TST_UserManagement\\CouponManagementTestCase.csproj": {
+    "G:\\4BC-CouponManagement\\SHR_Utility\\SHR_Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\4BC-CouponManagement\\TST_UserManagement\\CouponManagementTestCase.csproj",
-        "projectName": "CouponManagementTestCase",
-        "projectPath": "G:\\4BC-CouponManagement\\TST_UserManagement\\CouponManagementTestCase.csproj",
+        "projectUniqueName": "G:\\4BC-CouponManagement\\SHR_Utility\\SHR_Utility.csproj",
+        "projectName": "SHR_Utility",
+        "projectPath": "G:\\4BC-CouponManagement\\SHR_Utility\\SHR_Utility.csproj",
         "packagesPath": "C:\\Users\\Rishika Rani\\.nuget\\packages\\",
-        "outputPath": "G:\\4BC-CouponManagement\\TST_UserManagement\\obj\\",
+        "outputPath": "G:\\4BC-CouponManagement\\SHR_Utility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -40,20 +40,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "dependencies": {
-            "Microsoft.NET.Test.Sdk": {
-              "target": "Package",
-              "version": "[16.4.0, )"
-            },
-            "NUnit3TestAdapter": {
-              "target": "Package",
-              "version": "[3.15.1, )"
-            },
-            "nunit": {
-              "target": "Package",
-              "version": "[3.12.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
