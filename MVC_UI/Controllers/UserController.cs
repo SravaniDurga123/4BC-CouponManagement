@@ -25,5 +25,24 @@ namespace MVC_UI.Controllers
             }
             return View(userDetails);
         }
+        [HttpGet]
+        public async Task<IActionResult> GetUserById(int id)
+        {
+            UserDetails user = new UserDetails();
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync("http://localhost:61644/api/v1/GetUser/" + id))
+                {
+                    var apiResponse = await response.Content.ReadAsStringAsync();
+                    user = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
+                }
+            }
+            return View(user);
+        }
+
+
+
+
+
     }
 }

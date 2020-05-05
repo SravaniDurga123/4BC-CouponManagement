@@ -8164,19 +8164,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Maragani jagadeesh\\.nuget\\packages\\": {}
+    "C:\\Users\\Rishika Rani\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maragani jagadeesh\\Contacts\\Desktop\\CasrStudy@CouponManagement\\CouponsManagement\\TestUser\\TestUser.csproj",
+      "projectUniqueName": "F:\\4BC-CouponManagement\\TestUser\\TestUser.csproj",
       "projectName": "TestUser",
-      "projectPath": "C:\\Users\\Maragani jagadeesh\\Contacts\\Desktop\\CasrStudy@CouponManagement\\CouponsManagement\\TestUser\\TestUser.csproj",
-      "packagesPath": "C:\\Users\\Maragani jagadeesh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maragani jagadeesh\\Contacts\\Desktop\\CasrStudy@CouponManagement\\CouponsManagement\\TestUser\\obj\\",
+      "projectPath": "F:\\4BC-CouponManagement\\TestUser\\TestUser.csproj",
+      "packagesPath": "C:\\Users\\Rishika Rani\\.nuget\\packages\\",
+      "outputPath": "F:\\4BC-CouponManagement\\TestUser\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Maragani jagadeesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Rishika Rani\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8189,14 +8193,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Maragani jagadeesh\\Contacts\\Desktop\\CasrStudy@CouponManagement\\CouponsManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj": {
-              "projectPath": "C:\\Users\\Maragani jagadeesh\\Contacts\\Desktop\\CasrStudy@CouponManagement\\CouponsManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj"
+            "F:\\4BC-CouponManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj": {
+              "projectPath": "F:\\4BC-CouponManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj"
             },
-            "C:\\Users\\Maragani jagadeesh\\Contacts\\Desktop\\CasrStudy@CouponManagement\\CouponsManagement\\SHR_Model\\SHR_Model.csproj": {
-              "projectPath": "C:\\Users\\Maragani jagadeesh\\Contacts\\Desktop\\CasrStudy@CouponManagement\\CouponsManagement\\SHR_Model\\SHR_Model.csproj"
+            "F:\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj": {
+              "projectPath": "F:\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj"
             },
-            "C:\\Users\\Maragani jagadeesh\\Contacts\\Desktop\\CasrStudy@CouponManagement\\CouponsManagement\\SVC_UserManagement\\UserManagement.csproj": {
-              "projectPath": "C:\\Users\\Maragani jagadeesh\\Contacts\\Desktop\\CasrStudy@CouponManagement\\CouponsManagement\\SVC_UserManagement\\UserManagement.csproj"
+            "F:\\4BC-CouponManagement\\SVC_UserManagement\\UserManagement.csproj": {
+              "projectPath": "F:\\4BC-CouponManagement\\SVC_UserManagement\\UserManagement.csproj"
             }
           }
         }
