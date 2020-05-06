@@ -6938,19 +6938,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\91703\\.nuget\\packages\\": {}
+    "C:\\Users\\madhurip\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CouponManagement\\4BC-CouponManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj",
+      "projectUniqueName": "D:\\GitProject2\\CouponManagement\\4BC-CouponManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj",
       "projectName": "CouponManagementDBEntity",
-      "projectPath": "D:\\CouponManagement\\4BC-CouponManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj",
-      "packagesPath": "C:\\Users\\91703\\.nuget\\packages\\",
-      "outputPath": "D:\\CouponManagement\\4BC-CouponManagement\\SHR_DBEntity\\obj\\",
+      "projectPath": "D:\\GitProject2\\CouponManagement\\4BC-CouponManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj",
+      "packagesPath": "C:\\Users\\madhurip\\.nuget\\packages\\",
+      "outputPath": "D:\\GitProject2\\CouponManagement\\4BC-CouponManagement\\SHR_DBEntity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\91703\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\madhurip\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6963,8 +6963,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\CouponManagement\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj": {
-              "projectPath": "D:\\CouponManagement\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj"
+            "D:\\GitProject2\\CouponManagement\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj": {
+              "projectPath": "D:\\GitProject2\\CouponManagement\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj"
             }
           }
         }

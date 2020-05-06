@@ -33,5 +33,14 @@ namespace CouponManagementTestCase.Repository
             Assert.That(getAllUser.Count,Is.EqualTo(2));
            
         }
+        [Test]
+        public async Task GetUser_Valid_Returns(int userId)
+        {
+            // mockCouponManagementContext.UserDetails.AddRange(mockUserDatas.userDetails);
+            // await mockCouponManagementContext.SaveChangesAsync();
+            var getUserById = await userRepository.GetUser(10);
+            Assert.That(getUserById, Is.Not.Null);
+            Assert.That(getUserById.UserId, Is.EqualTo(10));
+        }
     }
 }
