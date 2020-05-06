@@ -693,9 +693,6 @@ D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\bin\Debug\netcoreapp
 D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\bin\Debug\netcoreapp3.1\CouponManagementDBEntity.pdb
 D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\bin\Debug\netcoreapp3.1\SHR_Model.pdb
 D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.csprojAssemblyReference.cache
-D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.csproj.CoreCompileInputs.cache
-D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.MvcApplicationPartsAssemblyInfo.cs
-D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.MvcApplicationPartsAssemblyInfo.cache
 D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.AssemblyInfoInputs.cache
 D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.AssemblyInfo.cs
 D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.RazorTargetAssemblyInfo.cache
@@ -975,3 +972,8 @@ C:\Users\Maragani jagadeesh\Contacts\Desktop\CoupounManagement\4BC-CouponManagem
 C:\Users\Maragani jagadeesh\Contacts\Desktop\CoupounManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.dll
 C:\Users\Maragani jagadeesh\Contacts\Desktop\CoupounManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.pdb
 C:\Users\Maragani jagadeesh\Contacts\Desktop\CoupounManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.genruntimeconfig.cache
+D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\bin\Debug\netcoreapp3.1\log4net.dll
+D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll
+D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.csproj.CoreCompileInputs.cache
+D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.MvcApplicationPartsAssemblyInfo.cs
+D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.MvcApplicationPartsAssemblyInfo.cache

@@ -23,7 +23,7 @@ namespace CouponManagementDBEntity.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=DESKTOP-KJSLJO5\\SQLEXPRESS;Database=CouponManagement;User Id=sa; Password=sravani;");
+                optionsBuilder.UseSqlServer("Server=HARISH_PC\\MSSQL;Database=CouponManagement;User Id=sa; Password=pass@123;");
             }
         }
 
@@ -32,7 +32,7 @@ namespace CouponManagementDBEntity.Models
             modelBuilder.Entity<CouponDetails>(entity =>
             {
                 entity.HasKey(e => e.CouponId)
-                    .HasName("PK__CouponDe__384AF1BA1B25FEAF");
+                    .HasName("PK__CouponDe__384AF1BA40F872D3");
 
                 entity.Property(e => e.CouponExpiredDate).HasColumnType("datetime");
 
@@ -45,7 +45,7 @@ namespace CouponManagementDBEntity.Models
 
                 entity.Property(e => e.CouponStatus)
                     .IsRequired()
-                    .HasMaxLength(10)
+                    .HasMaxLength(20)
                     .IsUnicode(false);
 
                 entity.Property(e => e.CreateDate).HasColumnType("datetime");
@@ -55,36 +55,36 @@ namespace CouponManagementDBEntity.Models
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.CouponDetails)
                     .HasForeignKey(d => d.UserId)
-                    .HasConstraintName("FK__CouponDet__UserI__300424B4");
+                    .HasConstraintName("FK__CouponDet__UserI__267ABA7A");
             });
 
             modelBuilder.Entity<UserDetails>(entity =>
             {
                 entity.HasKey(e => e.UserId)
-                    .HasName("PK__UserDeta__1788CC4C367E4FCF");
+                    .HasName("PK__UserDeta__1788CC4C452E18B2");
 
                 entity.HasIndex(e => e.UserName)
-                    .HasName("UQ__UserDeta__C9F284560F09F1D9")
+                    .HasName("UQ__UserDeta__C9F2845695F9F0BB")
                     .IsUnique();
 
                 entity.Property(e => e.CreateDate).HasColumnType("datetime");
 
                 entity.Property(e => e.EmailAddr)
                     .IsRequired()
-                    .HasMaxLength(30)
+                    .HasMaxLength(50)
                     .IsUnicode(false);
 
                 entity.Property(e => e.FirstName)
                     .IsRequired()
-                    .HasMaxLength(30)
+                    .HasMaxLength(50)
                     .IsUnicode(false);
 
                 entity.Property(e => e.LastName)
-                    .HasMaxLength(30)
+                    .HasMaxLength(50)
                     .IsUnicode(false);
 
                 entity.Property(e => e.PhoneNumber)
-                    .HasMaxLength(12)
+                    .HasMaxLength(50)
                     .IsUnicode(false);
 
                 entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
@@ -94,7 +94,8 @@ namespace CouponManagementDBEntity.Models
                     .IsUnicode(false);
 
                 entity.Property(e => e.UserName)
-                    .HasMaxLength(30)
+                    .IsRequired()
+                    .HasMaxLength(50)
                     .IsUnicode(false);
 
                 entity.Property(e => e.UserPassword)

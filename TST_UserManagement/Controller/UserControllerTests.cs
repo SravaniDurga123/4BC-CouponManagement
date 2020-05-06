@@ -6,5 +6,6 @@ namespace CouponManagementTestCase.Controller
 {
     class UserControllerTests
     {
+
     }
 }

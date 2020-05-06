@@ -30,7 +30,7 @@ namespace UserManagement.Helper
             {
                 return await _iUserRepository.GetAllUsers();
             }
-            catch(Exception e)
+            catch(Exception )
             {
                 throw;
             }

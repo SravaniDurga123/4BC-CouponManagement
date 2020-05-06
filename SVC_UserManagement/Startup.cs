@@ -11,10 +11,11 @@ using CouponManagementDBEntity.Models;
 using CouponManagementDBEntity.Repository;
 using UserManagement.Helper;
 using Microsoft.OpenApi.Models;
-using UserManagement.Helper;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.Extensions.Logging;
+
 
 namespace UserManagement
 {
@@ -40,12 +41,14 @@ namespace UserManagement
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+            loggerFactory.AddLog4Net();
+            app.UseHttpsRedirection();
             //app.UseMvc();
             app.UseRouting();
             app.UseSwagger();

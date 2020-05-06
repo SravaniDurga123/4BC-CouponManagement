@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using CouponManagementDBEntity.Models;
 using CouponManagementDBEntity.Repository;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using SHR_Model.Models;
 
@@ -38,10 +39,11 @@ namespace UserManagement.Helper
         {
             try
             {
-               return await _couponManagementContext.UserDetails.FindAsync(userId);
-               
+                return _couponManagementContext.UserDetails.FromSqlRaw("EXEC dbo.spGetUsersById @UserId={0}", userId).ToListAsync().Result.FirstOrDefault();
+                // return await _couponManagementContext.UserDetails.FindAsync(userId);
+
             }
-            catch(Exception e)
+            catch(Exception )
             {
                 throw;
             }
@@ -97,7 +99,12 @@ namespace UserManagement.Helper
         {
             try
             {
-                _couponManagementContext.UserDetails.Add(user);
+                int uid = user.UserId;
+                string uname = user.UserName;
+                var param = new SqlParameter("@UserId", uid);
+                var param1 = new SqlParameter("@UserName", uname);
+                _couponManagementContext.Database.ExecuteSqlCommand("spUserRegister", param,param1);
+                // _couponManagementContext.UserDetails.Add(user);
                 var id = await _couponManagementContext.SaveChangesAsync();
                 if (id > 0)
                     return "true";

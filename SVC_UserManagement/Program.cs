@@ -18,10 +18,15 @@ namespace UserManagement
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
+           Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseStartup<Startup>()
+                    .ConfigureLogging((hostingContext, logging) =>
+                    {
+                        logging.AddLog4Net();
+                        logging.SetMinimumLevel(LogLevel.Debug);
+                    });
                 });
     }
 
