@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CouponManagementDBEntity", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SHR_Model", "..\SHR_Model\SHR_Model.csproj", "{CD594D2B-3560-433C-9772-89AA87389387}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagementTestCase", "..\TST_UserManagement\UserManagementTestCase.csproj", "{8C013FD4-13A0-47B5-9CC0-16E07EAD113A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CouponManagementTestCase", "..\TST_CouponManagement\CouponManagementTestCase.csproj", "{8C013FD4-13A0-47B5-9CC0-16E07EAD113A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SHR_Utility", "..\SHR_Utility\SHR_Utility.csproj", "{DA783E9F-BEBC-449E-8A60-DE89793A1D9E}"
 EndProject

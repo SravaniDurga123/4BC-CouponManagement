@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CouponManagement", "..\SVC_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CouponManagementDBEntity", "..\SHR_DBEntity\CouponManagementDBEntity.csproj", "{9C568312-C038-4EE2-96DB-37158AB2BAA1}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CouponManagementTestCase", "..\TST_CouponManagement\CouponManagementTestCase.csproj", "{FDDBD3A0-F0B2-41A6-BE28-3103876F2DA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F22075AA-6610-47B6-88A1-35C8DA88113D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +25,16 @@ Global
 		{9C568312-C038-4EE2-96DB-37158AB2BAA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C568312-C038-4EE2-96DB-37158AB2BAA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C568312-C038-4EE2-96DB-37158AB2BAA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDDBD3A0-F0B2-41A6-BE28-3103876F2DA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDDBD3A0-F0B2-41A6-BE28-3103876F2DA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDDBD3A0-F0B2-41A6-BE28-3103876F2DA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDDBD3A0-F0B2-41A6-BE28-3103876F2DA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FDDBD3A0-F0B2-41A6-BE28-3103876F2DA6} = {F22075AA-6610-47B6-88A1-35C8DA88113D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9A2D8E4B-8F92-47EE-B03E-E93C74413F15}
