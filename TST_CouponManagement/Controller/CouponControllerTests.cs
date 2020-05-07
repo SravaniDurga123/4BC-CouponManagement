@@ -45,5 +45,36 @@ namespace CouponManagementTestCase.Controller
             var result = await couponController.GetCoupons(10);
             Assert.That(result, Is.Null);
         }
+        /// <summary>
+        /// to test exception of Adding coupon
+        /// </summary>
+        /// <returns></returns>
+        [Test]
+        public async Task AddCoupon_Valid_Return()
+        {
+            mockCouponManagementHelper.Setup(d => d.AddCoupon(It.IsAny<CouponDetails>())).ReturnsAsync(new bool());
+            var result = await couponController.AddCoupon(new CouponDetails()
+            {
+                CouponId = 40,
+                CouponNumber = "df453st",
+                CouponStatus = "valid",
+                CouponStartDate = DateTime.Now,
+                CouponExpiredDate = DateTime.Now.AddDays(32),
+                CreateDate = DateTime.Now,
+                UpdatedDate = DateTime.Now,
+                UserId = 10
+
+            });
+            Assert.That(result, Is.Not.Null);
+            Assert.That(result, Is.True);
+        }
+        [Test]
+        public async Task DeleteCoupon_Valid_Return()
+        {
+            mockCouponManagementHelper.Setup(d => d.GetAllCoupon(It.IsAny<int>())).ReturnsAsync(mockCouponData.couponDetails);
+            var result = await couponController.DeleteCoupon(10);
+            Assert.That(result, Is.Null);
+
+        }
     }
 }

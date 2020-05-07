@@ -45,6 +45,10 @@ namespace CouponManagementTestCase.Controller
             var result = await userController.GetAllUsers();
             Assert.That(result, Is.Null);
         }
+        /// <summary>
+        /// to test the GetUser
+        /// </summary>
+        /// <returns></returns>
         [Test]
         public async Task GetUser_Valid_Returns()
         {
@@ -52,6 +56,10 @@ namespace CouponManagementTestCase.Controller
             var result = await userController.GetUser(10);
             Assert.That(result, Is.Not.Null);
         }
+        /// <summary>
+        /// To test GetUsers
+        /// </summary>
+        /// <returns></returns>
         [Test]
         public async Task GetUser_Invalid_ReturnsNull()
          {
@@ -72,6 +80,10 @@ namespace CouponManagementTestCase.Controller
         //    Assert.That(result, Is.EqualTo(true));
 
         //}
+        /// <summary>
+        /// to test userRegister
+        /// </summary>
+        /// <returns></returns>
         [Test]
         public async Task UserRegister_valid_Returns()
         {
@@ -92,6 +104,10 @@ namespace CouponManagementTestCase.Controller
             Assert.That(result, Is.Not.Null);
             Assert.That(result, Is.EqualTo(true));
         }
+        /// <summary>
+        /// to test update user 
+        /// </summary>
+        /// <returns></returns>
         [Test]
         public async Task UpdateUser_valid_Returns()
         {

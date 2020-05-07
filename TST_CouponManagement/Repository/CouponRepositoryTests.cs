@@ -38,5 +38,46 @@ namespace CouponManagementTestCase.Repository
             Assert.That(getAllCoupon, Is.Not.Null);
             Assert.That(getAllCoupon.Count, Is.EqualTo(1));
         }
+        /// <summary>
+        /// to test exception of Adding coupon
+        /// </summary>
+        /// <returns></returns>
+        [Test]
+        public async Task AddCoupon_Valid_Returns()
+        {
+            mockCouponManagementContext.UserDetails.AddRange(mockUserDatas.userDetails);
+            await mockCouponManagementContext.SaveChangesAsync();
+            mockCouponManagementContext.CouponDetails.AddRange(mockCouponData.couponDetails);
+            await mockCouponManagementContext.SaveChangesAsync();
+            var getCouponId = await couponRepository.AddCoupon(new CouponDetails()
+            {
+                CouponId = 25,
+                CouponNumber = "JHDF748N",
+                CouponStatus = "valid",
+                CouponStartDate = DateTime.Now,
+                CouponExpiredDate = DateTime.Now.AddDays(29),
+                CreateDate = DateTime.Now,
+                UpdatedDate = DateTime.Now,
+                UserId = 10
+            });
+        }
+        /// <summary>
+        /// 
+        /// to test exceptions of Delete coupon
+        /// </summary>
+        /// <returns></returns>
+        [Test]
+        public async Task DeleteCoupon_Valid_Returns()
+        {
+            mockCouponManagementContext.UserDetails.AddRange(mockUserDatas.userDetails);
+            await mockCouponManagementContext.SaveChangesAsync();
+            mockCouponManagementContext.CouponDetails.AddRange(mockCouponData.couponDetails);
+            await mockCouponManagementContext.SaveChangesAsync();
+            var getAllCoupon = await couponRepository.DeleteCoupon(10);
+            Assert.That(getAllCoupon, Is.Null);
+
+
+        }
+
     }
 }

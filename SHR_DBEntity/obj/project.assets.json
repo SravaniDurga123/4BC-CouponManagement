@@ -1995,16 +1995,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
-      },
-      "SHR_Model/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "compile": {
-          "bin/placeholder/SHR_Model.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/SHR_Model.dll": {}
-        }
       }
     }
   },
@@ -6922,35 +6912,34 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
-    },
-    "SHR_Model/1.0.0": {
-      "type": "project",
-      "path": "../SHR_Model/SHR_Model.csproj",
-      "msbuildProject": "../SHR_Model/SHR_Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "G:\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.3",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.3",
-      "Microsoft.Extensions.Logging.Log4Net.AspNetCore >= 3.1.0",
-      "SHR_Model >= 1.0.0"
+      "Microsoft.Extensions.Logging.Log4Net.AspNetCore >= 3.1.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\91703\\.nuget\\packages\\": {}
+    "C:\\Users\\Rishika Rani\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CouponManagement\\4BC-CouponManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj",
+      "projectUniqueName": "G:\\4BC-CouponManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj",
       "projectName": "CouponManagementDBEntity",
-      "projectPath": "D:\\CouponManagement\\4BC-CouponManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj",
-      "packagesPath": "C:\\Users\\91703\\.nuget\\packages\\",
-      "outputPath": "D:\\CouponManagement\\4BC-CouponManagement\\SHR_DBEntity\\obj\\",
+      "projectPath": "G:\\4BC-CouponManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj",
+      "packagesPath": "C:\\Users\\Rishika Rani\\.nuget\\packages\\",
+      "outputPath": "G:\\4BC-CouponManagement\\SHR_DBEntity\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\91703\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Rishika Rani\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6963,8 +6952,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\CouponManagement\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj": {
-              "projectPath": "D:\\CouponManagement\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj"
+            "G:\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj": {
+              "projectPath": "G:\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj"
             }
           }
         }
@@ -7011,5 +7000,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'G:\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "libraryId": "G:\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }
