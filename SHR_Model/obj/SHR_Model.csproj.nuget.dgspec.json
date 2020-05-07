@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitProject2\\CouponManagement\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj": {}
+    "G:\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj": {}
   },
   "projects": {
-    "D:\\GitProject2\\CouponManagement\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj": {
+    "G:\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitProject2\\CouponManagement\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj",
+        "projectUniqueName": "G:\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj",
         "projectName": "SHR_Model",
-        "projectPath": "D:\\GitProject2\\CouponManagement\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj",
-        "packagesPath": "C:\\Users\\madhurip\\.nuget\\packages\\",
-        "outputPath": "D:\\GitProject2\\CouponManagement\\4BC-CouponManagement\\SHR_Model\\obj\\",
+        "projectPath": "G:\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj",
+        "packagesPath": "C:\\Users\\Rishika Rani\\.nuget\\packages\\",
+        "outputPath": "G:\\4BC-CouponManagement\\SHR_Model\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\madhurip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rishika Rani\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

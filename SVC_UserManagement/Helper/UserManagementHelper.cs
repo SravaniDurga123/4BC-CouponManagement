@@ -23,7 +23,10 @@ namespace UserManagement.Helper
         {
             _iUserRepository = iUserRepository;
         }
-
+        /// <summary>
+        /// getting all users
+        /// </summary>
+        /// <returns></returns>
         public async Task<List<UserDetails>> GetAllUsers()
         {
             try
@@ -35,7 +38,11 @@ namespace UserManagement.Helper
                 throw;
             }
         }
-
+        /// <summary>
+        /// getting user by id 
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
         public async Task<UserDetails> GetUser(int userId)
         {
             try
@@ -48,7 +55,11 @@ namespace UserManagement.Helper
                 throw;
             }
         }
-
+        /// <summary>
+        /// updating user details
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         public async Task<bool> UpdateUser(UserDetails user)
         {
             try
@@ -64,7 +75,11 @@ namespace UserManagement.Helper
                 throw;
             }
         }
-
+        /// <summary>
+        /// validating user details for login
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         public async Task<string> UserLogin(UserLogin user)
         {
             try
@@ -79,7 +94,11 @@ namespace UserManagement.Helper
                 throw;
             }
         }
-
+/// <summary>
+/// registering new user
+/// </summary>
+/// <param name="user"></param>
+/// <returns></returns>
        
 
         public async Task<string> UserRegister(UserDetails user)

@@ -33,8 +33,33 @@ namespace CouponManagementTestCase.Repository
             Assert.That(getAllUser.Count, Is.EqualTo(2));
 
         }
-       
+        [Test]
+        public async Task UserRegister_valid_Returns()
+        {
+            mockCouponManagementContext.UserDetails.AddRange(mockUserDatas.userDetails);
+            await mockCouponManagementContext.SaveChangesAsync();
+
+            var getUserById = await userRepository.UserRegister(new UserDetails()
+            {
+                UserId = 12,
+                FirstName = "sai",
+                LastName = "manasa",
+                UserName = "sree",
+                UserPassword = "manasa",
+                EmailAddr = "manasa@gmail.com",
+                PhoneNumber = "7660912345",
+                CreateDate = DateTime.Now,
+                UpdatedDate = DateTime.Now,
+                UserAddress = "chennai"
+
+            });
+            Assert.That(getUserById, Is.Not.Null);
+            Assert.That(getUserById, Is.EqualTo("true"));
+
+        }
     }
+
 }
+
 
 
