@@ -76,5 +76,29 @@ namespace CouponManagementTestCase.Controller
             Assert.That(result, Is.Null);
 
         }
+
+        ///// <summary>
+        /// To Test for updateCoupon
+        /// </summary>
+        /// <returns></returns>
+        [Test]
+        public async Task UpdateUser_valid_Returns()
+        {
+            mockCouponManagementHelper.Setup(d => d.UpdateCoupon(It.IsAny<CouponDetails>())).ReturnsAsync(new Boolean());
+            var result = await couponController.UpdateCoupon(new CouponDetails()
+            {
+                CouponId = 20,
+                CouponNumber = "JHDF748N",
+                CouponStatus = "valid",
+                CouponStartDate = DateTime.Now,
+                CouponExpiredDate = DateTime.Now.AddDays(29),
+                CreateDate = DateTime.Now,
+                UpdatedDate = DateTime.Now,
+                UserId = 10
+            });
+            Assert.That(result, Is.Not.Null);
+            Assert.That(result, Is.EqualTo(true));
+        }
+
     }
 }

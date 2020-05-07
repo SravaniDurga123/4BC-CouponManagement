@@ -83,6 +83,29 @@ namespace CouponManagementTestCase.Helper
           
             
         }
+        /// <summary>
+        /// to test whether the coupon can update or not
+        /// </summary>
+        /// <returns></returns>
+        [Test]
+        public async Task UpdateUser_valid_Returns()
+        {
+            mockCouponRepository.Setup(d => d.UpdateCoupon(It.IsAny<CouponDetails>())).ReturnsAsync(new Boolean());
+            var result = await couponManagementHelper.UpdateCoupon(new CouponDetails()
+            {
+                CouponId = 20,
+                CouponNumber = "JHDF748N",
+                CouponStatus = "valid",
+                CouponStartDate = DateTime.Now,
+                CouponExpiredDate = DateTime.Now.AddDays(29),
+                CreateDate = DateTime.Now,
+                UpdatedDate = DateTime.Now,
+                UserId = 10
+            });
+            Assert.That(result, Is.Not.Null);
+            Assert.That(result, Is.EqualTo(true));
+        }
+
 
     }
 }

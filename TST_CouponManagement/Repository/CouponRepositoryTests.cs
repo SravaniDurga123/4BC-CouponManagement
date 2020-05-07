@@ -78,6 +78,42 @@ namespace CouponManagementTestCase.Repository
 
 
         }
+        /// <summary>
+        /// To Test the UpdateCoupon
+        /// </summary>
+        /// <param name="coupon"></param>
+        /// <returns></returns>
+        [Test]
+        public async Task UpdateCoupon_Valid_Returns(CouponDetails coupon)
+        {
+            //mockCouponManagementContext.UserDetails.AddRange(mockUserDatas.userDetails);
+            //await mockCouponManagementContext.SaveChangesAsync();
+            //var getCouponId = await couponRepository.UpdateCoupon(coupon);
+            //coupon.CouponNumber = "rtyu456";
+            //var updateCoupon = await couponRepository.UpdateCoupon(coupon);
+            //CouponDetails coupon1 = await couponRepository.UpdateCoupon();
+            //Assert.AreSame(coupon, coupon1);
+            mockCouponManagementContext.UserDetails.AddRange(mockUserDatas.userDetails);
+            await mockCouponManagementContext.SaveChangesAsync();
+            mockCouponManagementContext.CouponDetails.AddRange(mockCouponData.couponDetails);
+            await mockCouponManagementContext.SaveChangesAsync();
+            var updateCoupon = await couponRepository.UpdateCoupon(
+                new CouponDetails()
+                {
+                    CouponId = 20,
+                    CouponNumber = "JHDF748N",
+                    CouponStatus = "valid",
+                    CouponStartDate = DateTime.Now,
+                    CouponExpiredDate = DateTime.Now.AddDays(29),
+                    CreateDate = DateTime.Now,
+                    UpdatedDate = DateTime.Now,
+                    UserId = 10
+
+                });
+            Assert.That(updateCoupon, Is.Not.Null);
+            Assert.That(updateCoupon, Is.EqualTo(true));
+        }
+
 
     }
 }

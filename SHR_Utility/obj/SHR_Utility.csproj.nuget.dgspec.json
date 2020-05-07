@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CouponManagement\\4BC-CouponManagement\\SHR_Utility\\SHR_Utility.csproj": {}
+    "D:\\Friends\\proect coupon\\CouponManagement\\4BC-CouponManagement\\SHR_Utility\\SHR_Utility.csproj": {}
   },
   "projects": {
-    "D:\\CouponManagement\\4BC-CouponManagement\\SHR_Utility\\SHR_Utility.csproj": {
+    "D:\\Friends\\proect coupon\\CouponManagement\\4BC-CouponManagement\\SHR_Utility\\SHR_Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CouponManagement\\4BC-CouponManagement\\SHR_Utility\\SHR_Utility.csproj",
+        "projectUniqueName": "D:\\Friends\\proect coupon\\CouponManagement\\4BC-CouponManagement\\SHR_Utility\\SHR_Utility.csproj",
         "projectName": "SHR_Utility",
-        "projectPath": "D:\\CouponManagement\\4BC-CouponManagement\\SHR_Utility\\SHR_Utility.csproj",
-        "packagesPath": "C:\\Users\\91703\\.nuget\\packages\\",
-        "outputPath": "D:\\CouponManagement\\4BC-CouponManagement\\SHR_Utility\\obj\\",
+        "projectPath": "D:\\Friends\\proect coupon\\CouponManagement\\4BC-CouponManagement\\SHR_Utility\\SHR_Utility.csproj",
+        "packagesPath": "C:\\Users\\madhurip\\.nuget\\packages\\",
+        "outputPath": "D:\\Friends\\proect coupon\\CouponManagement\\4BC-CouponManagement\\SHR_Utility\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\91703\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\madhurip\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

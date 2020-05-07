@@ -755,3 +755,5 @@ D:\CouponManagement\4BC-CouponManagement\TST_CouponManagement\bin\Debug\netcorea
 D:\CouponManagement\4BC-CouponManagement\TST_CouponManagement\bin\Debug\netcoreapp3.1\CouponManagement.pdb
 D:\CouponManagement\4BC-CouponManagement\TST_CouponManagement\obj\Debug\netcoreapp3.1\CouponManagementTestCase.csproj.CopyComplete
 D:\CouponManagement\4BC-CouponManagement\TST_CouponManagement\obj\Debug\netcoreapp3.1\CouponManagementTestCase.genruntimeconfig.cache
+D:\Friends\proect coupon\CouponManagement\4BC-CouponManagement\TST_CouponManagement\obj\Debug\netcoreapp3.1\CouponManagementTestCase.dll
+D:\Friends\proect coupon\CouponManagement\4BC-CouponManagement\TST_CouponManagement\obj\Debug\netcoreapp3.1\CouponManagementTestCase.pdb
