@@ -3,6 +3,7 @@ using CouponManagementDBEntity.Models;
 using CouponManagementDBEntity.Repository;
 using CouponManagementTestCase.DATA;
 using NUnit.Framework;
+using SHR_Model.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -94,6 +95,31 @@ namespace CouponManagementTestCase.Repository
             var updateUser = await userRepository.UpdateUser(user);
             UserDetails user1 = await userRepository.GetUser(10);
             Assert.AreSame(user, user1);
+        }
+        [Test]
+        public async Task UserLogin_Valid(string username, string password)
+        {
+           
+                mockCouponManagementContext.UserDetails.AddRange(mockUserDatas.userDetails);
+                await mockCouponManagementContext.SaveChangesAsync();
+
+                var user = new UserLogin { UserName = "hello1", UserPassword = "hello1" };
+                Task<UserDetails> result = userRepository.UserLogin(user);
+                var s = result.Result;
+                Assert.NotNull(s.UserName);
+
+            
+        }
+        [Test]
+        public async Task UserLogin_Invalid(string username, string pass)
+        {
+            
+                mockCouponManagementContext.UserDetails.AddRange(mockUserDatas.userDetails);
+                await mockCouponManagementContext.SaveChangesAsync();
+                var user = new UserLogin { UserName = "hai", UserPassword = "hai" };
+                Task<UserDetails> result = userRepository.UserLogin(user);
+                Assert.AreEqual(result.Result, null);
+
         }
 
     }
