@@ -39,8 +39,8 @@ namespace UserManagement.Helper
         {
             try
             {
-                return _couponManagementContext.UserDetails.FromSqlRaw("EXEC dbo.spGetUsersById @UserId={0}", userId).ToListAsync().Result.FirstOrDefault();
-                // return await _couponManagementContext.UserDetails.FindAsync(userId);
+               // return _couponManagementContext.UserDetails.FromSqlRaw("EXEC dbo.spGetUsersById @UserId={0}", userId).ToListAsync().Result.FirstOrDefault();
+                 return await _couponManagementContext.UserDetails.FindAsync(userId);
 
             }
             catch(Exception )
@@ -103,8 +103,8 @@ namespace UserManagement.Helper
                 string uname = user.UserName;
                 var param = new SqlParameter("@UserId", uid);
                 var param1 = new SqlParameter("@UserName", uname);
-                _couponManagementContext.Database.ExecuteSqlCommand("spUserRegister", param,param1);
-                // _couponManagementContext.UserDetails.Add(user);
+               // _couponManagementContext.Database.ExecuteSqlCommand("spUserRegister", param,param1);
+                 _couponManagementContext.UserDetails.Add(user);
                 var id = await _couponManagementContext.SaveChangesAsync();
                 if (id > 0)
                     return "true";

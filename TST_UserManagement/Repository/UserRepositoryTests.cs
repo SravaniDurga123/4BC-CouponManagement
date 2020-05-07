@@ -14,10 +14,10 @@ namespace CouponManagementTestCase.Repository
     public class UserRepositoryTests
     {
         private IUserRepository userRepository;
-        private CouponManagementContext  mockCouponManagementContext;
+        private CouponManagementContext mockCouponManagementContext;
         private UserDatas mockUserDatas;
         [SetUp]
-         public void Setup()
+        public void Setup()
         {
             mockCouponManagementContext = new Sqlite().CreateSqliteConnection();
             userRepository = new UserRepository(mockCouponManagementContext);
@@ -27,20 +27,14 @@ namespace CouponManagementTestCase.Repository
         public async Task GetAllUsers_Valid_Returns()
         {
             mockCouponManagementContext.UserDetails.AddRange(mockUserDatas.userDetails);
-           await  mockCouponManagementContext.SaveChangesAsync();
+            await mockCouponManagementContext.SaveChangesAsync();
             var getAllUser = await userRepository.GetAllUsers();
             Assert.That(getAllUser, Is.Not.Null);
-            Assert.That(getAllUser.Count,Is.EqualTo(2));
-           
+            Assert.That(getAllUser.Count, Is.EqualTo(2));
+
         }
-        [Test]
-        public async Task GetUser_Valid_Returns(int userId)
-        {
-            // mockCouponManagementContext.UserDetails.AddRange(mockUserDatas.userDetails);
-            // await mockCouponManagementContext.SaveChangesAsync();
-            var getUserById = await userRepository.GetUser(10);
-            Assert.That(getUserById, Is.Not.Null);
-            Assert.That(getUserById.UserId, Is.EqualTo(10));
-        }
+       
     }
 }
+
+
