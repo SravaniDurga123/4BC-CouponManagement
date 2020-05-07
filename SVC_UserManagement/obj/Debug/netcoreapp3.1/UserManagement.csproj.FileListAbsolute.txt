@@ -1116,3 +1116,5 @@ D:\GitProject2\CouponManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debu
 D:\GitProject2\CouponManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.genruntimeconfig.cache
 G:\4BC-CouponManagement\SVC_UserManagement\bin\Debug\netcoreapp3.1\log4net.dll
 G:\4BC-CouponManagement\SVC_UserManagement\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll
+D:\GitProject\CouponManagement\4BC-CouponManagement\SVC_UserManagement\bin\Debug\netcoreapp3.1\log4net.dll
+D:\GitProject\CouponManagement\4BC-CouponManagement\SVC_UserManagement\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll
