@@ -1405,19 +1405,19 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
         }
       },
-      "Swashbuckle.AspNetCore/5.4.0": {
+      "Swashbuckle.AspNetCore/5.4.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "3.0.0",
-          "Swashbuckle.AspNetCore.Swagger": "5.4.0",
-          "Swashbuckle.AspNetCore.SwaggerGen": "5.4.0",
-          "Swashbuckle.AspNetCore.SwaggerUI": "5.4.0"
+          "Swashbuckle.AspNetCore.Swagger": "5.4.1",
+          "Swashbuckle.AspNetCore.SwaggerGen": "5.4.1",
+          "Swashbuckle.AspNetCore.SwaggerUI": "5.4.1"
         },
         "build": {
           "build/_._": {}
         }
       },
-      "Swashbuckle.AspNetCore.Swagger/5.4.0": {
+      "Swashbuckle.AspNetCore.Swagger/5.4.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.OpenApi": "1.1.4"
@@ -1432,10 +1432,10 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Swashbuckle.AspNetCore.SwaggerGen/5.4.0": {
+      "Swashbuckle.AspNetCore.SwaggerGen/5.4.1": {
         "type": "package",
         "dependencies": {
-          "Swashbuckle.AspNetCore.Swagger": "5.4.0"
+          "Swashbuckle.AspNetCore.Swagger": "5.4.1"
         },
         "compile": {
           "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
@@ -1447,7 +1447,7 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Swashbuckle.AspNetCore.SwaggerUI/5.4.0": {
+      "Swashbuckle.AspNetCore.SwaggerUI/5.4.1": {
         "type": "package",
         "compile": {
           "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
@@ -3203,6 +3203,23 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "CouponManagement/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "CouponManagementDBEntity": "1.0.0",
+          "Swashbuckle.AspNetCore": "5.4.1"
+        },
+        "compile": {
+          "bin/placeholder/CouponManagement.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CouponManagement.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "CouponManagementDBEntity/1.0.0": {
         "type": "project",
@@ -5383,22 +5400,22 @@
         "sqlitepclraw.provider.dynamic_cdecl.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore/5.4.0": {
-      "sha512": "38vkMtvx5002MtkPuvxERnRzqd49xW1jdHIvv9RIerXr+P5OGAVCzvRGo8sKA2nzl9S7jY5PZztr75QvOXy+Fw==",
+    "Swashbuckle.AspNetCore/5.4.1": {
+      "sha512": "5EA++Cg8nzw1GCOM+7gWqrXJtylH8XMu+ixkFrbRIhRSMiZLzVPCFnSgAvJn+hCyi+AipUoJbBYv1BjvugieSw==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore/5.4.0",
+      "path": "swashbuckle.aspnetcore/5.4.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/Swashbuckle.AspNetCore.props",
-        "swashbuckle.aspnetcore.5.4.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.5.4.1.nupkg.sha512",
         "swashbuckle.aspnetcore.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore.Swagger/5.4.0": {
-      "sha512": "vBwVCPxerORPMYPYoqs3LWv6yJoFm6vkuiWhECV397AiIHgEvfTHplXP5Ot3dh6czC/o6L9NTuOobx/Vh178vA==",
+    "Swashbuckle.AspNetCore.Swagger/5.4.1": {
+      "sha512": "EY9ILzyXCAdAOmbbBM1LCTGO/T/hcRv16GrmwHWLqcBTOzZQ1lX6hUG+0BDu0xt1ti6TWMTfqEGOojsGYE5rbg==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore.swagger/5.4.0",
+      "path": "swashbuckle.aspnetcore.swagger/5.4.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5406,14 +5423,14 @@
         "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.xml",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.dll",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.xml",
-        "swashbuckle.aspnetcore.swagger.5.4.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swagger.5.4.1.nupkg.sha512",
         "swashbuckle.aspnetcore.swagger.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore.SwaggerGen/5.4.0": {
-      "sha512": "BRwoRY9VLZpcqFnaqS0WlGi/KSAbSXpf997B8voLru5L4oUhA8SKnp9HgqKb8EZfQB4pCTGVcO4vnzxYgjXOeA==",
+    "Swashbuckle.AspNetCore.SwaggerGen/5.4.1": {
+      "sha512": "HH98jkSlJX16xyt/GRzjYs9SHekQTxT6Orok29smdrQ9usBkO8B2dBlUBxCLuupsch8ol46Oq/Apx3wve0LJTg==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore.swaggergen/5.4.0",
+      "path": "swashbuckle.aspnetcore.swaggergen/5.4.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5421,14 +5438,14 @@
         "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
-        "swashbuckle.aspnetcore.swaggergen.5.4.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggergen.5.4.1.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggergen.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore.SwaggerUI/5.4.0": {
-      "sha512": "7JDyyFXS+sPpe3dQ8yRV+62gP9kbxCDo9Wtna7MbUlg0+KyekkA/Gmb7bbZT3M2KcFyQGVXDlZoCd2+KhohD4A==",
+    "Swashbuckle.AspNetCore.SwaggerUI/5.4.1": {
+      "sha512": "YhRB2iqO/DILvWWxgzckPefxTwjJc9jPT1NjqEW/DPcYLP8CeR4/wII0h4mnV92pDcItPD5FVFT8yNotGmWViw==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore.swaggerui/5.4.0",
+      "path": "swashbuckle.aspnetcore.swaggerui/5.4.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5436,7 +5453,7 @@
         "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
-        "swashbuckle.aspnetcore.swaggerui.5.4.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggerui.5.4.1.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
@@ -10102,6 +10119,11 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
+    "CouponManagement/1.0.0": {
+      "type": "project",
+      "path": "../SVC_CouponManagement/CouponManagement.csproj",
+      "msbuildProject": "../SVC_CouponManagement/CouponManagement.csproj"
+    },
     "CouponManagementDBEntity/1.0.0": {
       "type": "project",
       "path": "../SHR_DBEntity/CouponManagementDBEntity.csproj",
@@ -10120,8 +10142,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "CouponManagement >= 1.0.0",
       "CouponManagementDBEntity >= 1.0.0",
-      "D:\\Friends\\proect coupon\\CouponManagement\\4BC-CouponManagement\\SVC_CouponManagement\\CouponManagement.csproj",
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.3",
       "Microsoft.NET.Test.Sdk >= 16.4.0",
       "Moq >= 4.14.1",
@@ -10131,19 +10153,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\madhurip\\.nuget\\packages\\": {}
+    "C:\\Users\\Maragani jagadeesh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Friends\\proect coupon\\CouponManagement\\4BC-CouponManagement\\TST_CouponManagement\\CouponManagementTestCase.csproj",
+      "projectUniqueName": "E:\\CouponManagement-CaseStudy\\4BC-CouponManagement\\TST_CouponManagement\\CouponManagementTestCase.csproj",
       "projectName": "CouponManagementTestCase",
-      "projectPath": "D:\\Friends\\proect coupon\\CouponManagement\\4BC-CouponManagement\\TST_CouponManagement\\CouponManagementTestCase.csproj",
-      "packagesPath": "C:\\Users\\madhurip\\.nuget\\packages\\",
-      "outputPath": "D:\\Friends\\proect coupon\\CouponManagement\\4BC-CouponManagement\\TST_CouponManagement\\obj\\",
+      "projectPath": "E:\\CouponManagement-CaseStudy\\4BC-CouponManagement\\TST_CouponManagement\\CouponManagementTestCase.csproj",
+      "packagesPath": "C:\\Users\\Maragani jagadeesh\\.nuget\\packages\\",
+      "outputPath": "E:\\CouponManagement-CaseStudy\\4BC-CouponManagement\\TST_CouponManagement\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\madhurip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Maragani jagadeesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10156,14 +10178,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Friends\\proect coupon\\CouponManagement\\4BC-CouponManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj": {
-              "projectPath": "D:\\Friends\\proect coupon\\CouponManagement\\4BC-CouponManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj"
+            "E:\\CouponManagement-CaseStudy\\4BC-CouponManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj": {
+              "projectPath": "E:\\CouponManagement-CaseStudy\\4BC-CouponManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj"
             },
-            "D:\\Friends\\proect coupon\\CouponManagement\\4BC-CouponManagement\\SVC_CouponManagement\\CouponManagement.csproj": {
-              "projectPath": "D:\\Friends\\proect coupon\\CouponManagement\\4BC-CouponManagement\\SVC_CouponManagement\\CouponManagement.csproj"
+            "E:\\CouponManagement-CaseStudy\\4BC-CouponManagement\\SVC_CouponManagement\\CouponManagement.csproj": {
+              "projectPath": "E:\\CouponManagement-CaseStudy\\4BC-CouponManagement\\SVC_CouponManagement\\CouponManagement.csproj"
             },
-            "D:\\Friends\\proect coupon\\CouponManagement\\4BC-CouponManagement\\SVC_UserManagement\\UserManagement.csproj": {
-              "projectPath": "D:\\Friends\\proect coupon\\CouponManagement\\4BC-CouponManagement\\SVC_UserManagement\\UserManagement.csproj"
+            "E:\\CouponManagement-CaseStudy\\4BC-CouponManagement\\SVC_UserManagement\\UserManagement.csproj": {
+              "projectPath": "E:\\CouponManagement-CaseStudy\\4BC-CouponManagement\\SVC_UserManagement\\UserManagement.csproj"
             }
           }
         }
@@ -10219,16 +10241,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "Unable to find project information for 'D:\\Friends\\proect coupon\\CouponManagement\\4BC-CouponManagement\\SVC_CouponManagement\\CouponManagement.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
-      "libraryId": "D:\\Friends\\proect coupon\\CouponManagement\\4BC-CouponManagement\\SVC_CouponManagement\\CouponManagement.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }

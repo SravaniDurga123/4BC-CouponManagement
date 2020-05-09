@@ -54,12 +54,12 @@ namespace UserManagement.Helper
         /// <param name="user"></param>
         /// <returns></returns>
 
-        public async Task<bool> UpdateUser(UserDetails user)
+        public async Task<bool> UpdateUser(UserDetails user1)
         {
             try
             {
-                user.UpdatedDate = DateTime.Now;
-                _couponManagementContext.UserDetails.Update(user);
+               
+                _couponManagementContext.UserDetails.Update(user1);
                 var id = await _couponManagementContext.SaveChangesAsync();
                 if (id > 0)
                     return true;
@@ -99,10 +99,10 @@ namespace UserManagement.Helper
         {
             try
             {
-                int uid = user.UserId;
-                string uname = user.UserName;
-                var param = new SqlParameter("@UserId", uid);
-                var param1 = new SqlParameter("@UserName", uname);
+                ////int uid = user.UserId;
+                ////string uname = user.UserName;
+                ////var param = new SqlParameter("@UserId", uid);
+                ////var param1 = new SqlParameter("@UserName", uname);
                // _couponManagementContext.Database.ExecuteSqlCommand("spUserRegister", param,param1);
                  _couponManagementContext.UserDetails.Add(user);
                 var id = await _couponManagementContext.SaveChangesAsync();

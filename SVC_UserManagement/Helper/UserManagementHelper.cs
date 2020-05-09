@@ -105,8 +105,8 @@ namespace UserManagement.Helper
         {
             try
             {
-               return await _iUserRepository.UserRegister(user);
-               
+              await _iUserRepository.UserRegister(user);
+                return "success";
             }
             catch
             {

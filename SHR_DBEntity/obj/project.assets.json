@@ -6938,19 +6938,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\madhurip\\.nuget\\packages\\": {}
+    "C:\\Users\\Maragani jagadeesh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Friends\\proect coupon\\CouponManagement\\4BC-CouponManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj",
+      "projectUniqueName": "E:\\CouponManagement-CaseStudy\\4BC-CouponManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj",
       "projectName": "CouponManagementDBEntity",
-      "projectPath": "D:\\Friends\\proect coupon\\CouponManagement\\4BC-CouponManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj",
-      "packagesPath": "C:\\Users\\madhurip\\.nuget\\packages\\",
-      "outputPath": "D:\\Friends\\proect coupon\\CouponManagement\\4BC-CouponManagement\\SHR_DBEntity\\obj\\",
+      "projectPath": "E:\\CouponManagement-CaseStudy\\4BC-CouponManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj",
+      "packagesPath": "C:\\Users\\Maragani jagadeesh\\.nuget\\packages\\",
+      "outputPath": "E:\\CouponManagement-CaseStudy\\4BC-CouponManagement\\SHR_DBEntity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\madhurip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Maragani jagadeesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6963,8 +6963,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Friends\\proect coupon\\CouponManagement\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj": {
-              "projectPath": "D:\\Friends\\proect coupon\\CouponManagement\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj"
+            "E:\\CouponManagement-CaseStudy\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj": {
+              "projectPath": "E:\\CouponManagement-CaseStudy\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj"
             }
           }
         }

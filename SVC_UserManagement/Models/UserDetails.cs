@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CouponManagementDBEntity.Models
+namespace UserManagement.Models
 {
     public partial class UserDetails
     {

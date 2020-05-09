@@ -113,11 +113,11 @@ namespace CouponManagementDBEntity.Repository
         /// </summary>
         /// <param name="coupon"></param>
         /// <returns></returns>
-        public async Task<bool> UpdateCoupon(CouponDetails coupon)
+        public async Task<bool> UpdateCoupon(CouponDetails coupon1)
         {
             try
             {
-                _couponManagementContext.CouponDetails.Update(coupon);
+                _couponManagementContext.CouponDetails.Update(coupon1);
                 int result = await _couponManagementContext.SaveChangesAsync();
                 if (result > 0)
                     return true;

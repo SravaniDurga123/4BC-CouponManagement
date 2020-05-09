@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace CouponManagementDBEntity.Models
+namespace UserManagement.Models
 {
     public partial class CouponManagementContext : DbContext
     {

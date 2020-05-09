@@ -57,10 +57,11 @@ namespace CouponManagementTestCase.Helper
         [Test]
         public async Task GetUser_Valid_Returns()
         {
+
             mockUserRepository.Setup(d => d.GetUser(It.IsAny<int>())).ReturnsAsync(new UserDetails());
-            var result = await userManagementHelper.GetUser(10);
+            var result = await userManagementHelper.GetUser(18);
             Assert.That(result, Is.Not.Null);
-            Assert.That(result.UserId, Is.EqualTo(10));
+          
         }
         /// <summary>
         /// to test user login is valid or not
@@ -86,7 +87,7 @@ namespace CouponManagementTestCase.Helper
         [Test]
         public async Task UserRegister_valid_Returns()
         {
-            mockUserRepository.Setup(d => d.UserRegister(It.IsAny<UserDetails>())).ReturnsAsync(default(string));
+            mockUserRepository.Setup(d => d.UserRegister(It.IsAny<UserDetails>())).ReturnsAsync("success");
             var result = await userManagementHelper.UserRegister(new UserDetails()
             {
                 UserId = 67,
@@ -101,7 +102,7 @@ namespace CouponManagementTestCase.Helper
                 LastName = "Xyz"
             });
             Assert.That(result, Is.Not.Null);
-            Assert.That(result, Is.EqualTo(true));
+            Assert.That(result, Is.EqualTo("success"));
         }
         /// <summary>
         /// to test whether the user can update or not
@@ -110,7 +111,7 @@ namespace CouponManagementTestCase.Helper
         [Test]
         public async Task UpdateUser_valid_Returns()
         {
-            mockUserRepository.Setup(d => d.UpdateUser(It.IsAny<UserDetails>())).ReturnsAsync(new Boolean());
+            mockUserRepository.Setup(d => d.UpdateUser(It.IsAny<UserDetails>())).ReturnsAsync(true);
             var result = await userManagementHelper.UpdateUser(new UserDetails()
             {
                 UserId = 10,

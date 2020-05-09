@@ -55,7 +55,7 @@ namespace CouponManagementTestCase.Helper
         [Test]
         public async Task AddCoupon_Valid_Return()
         {
-            mockCouponRepository.Setup(d => d.AddCoupon(It.IsAny<CouponDetails>())).ReturnsAsync(new bool());
+            mockCouponRepository.Setup(d => d.AddCoupon(It.IsAny<CouponDetails>())).ReturnsAsync(true);
             var result = await couponManagementHelper.AddCoupon(new CouponDetails()
             {
                 CouponId = 29,
@@ -77,9 +77,10 @@ namespace CouponManagementTestCase.Helper
         [Test]
         public async Task DeleteCoupon_Valid_Return()
         {
-            mockCouponRepository.Setup(d => d.GetAllCoupon(It.IsAny<int>())).ReturnsAsync(mockCouponData.couponDetails);
+            mockCouponRepository.Setup(d => d.DeleteCoupon(It.IsAny<int>())).ReturnsAsync(true);
             var result = await couponManagementHelper.DeleteCoupon(10);
-            Assert.That(result, Is.Null);
+            Assert.That(result, Is.Not.Null);
+            Assert.That(result, Is.EqualTo(true));
           
             
         }
@@ -90,7 +91,7 @@ namespace CouponManagementTestCase.Helper
         [Test]
         public async Task UpdateUser_valid_Returns()
         {
-            mockCouponRepository.Setup(d => d.UpdateCoupon(It.IsAny<CouponDetails>())).ReturnsAsync(new Boolean());
+            mockCouponRepository.Setup(d => d.UpdateCoupon(It.IsAny<CouponDetails>())).ReturnsAsync(true);
             var result = await couponManagementHelper.UpdateCoupon(new CouponDetails()
             {
                 CouponId = 20,

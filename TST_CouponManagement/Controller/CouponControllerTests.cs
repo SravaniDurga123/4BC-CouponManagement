@@ -8,6 +8,7 @@ using CouponManagementTestCase.DATA;
 using NUnit.Framework;
 using System.Threading.Tasks;
 using CouponManagementDBEntity.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CouponManagementTestCase.Controller
 {
@@ -42,7 +43,7 @@ namespace CouponManagementTestCase.Controller
         public async Task GetAllCoupon_InValid_RetunsNull()
         {
             mockCouponManagementHelper.Setup(d => d.GetAllCoupon(It.IsAny<int>())).ReturnsAsync((List<CouponDetails>)(null));
-            var result = await couponController.GetCoupons(10);
+            var result = await couponController.GetCoupons(10) ;
             Assert.That(result, Is.Null);
         }
         /// <summary>
@@ -64,16 +65,17 @@ namespace CouponManagementTestCase.Controller
                 UpdatedDate = DateTime.Now,
                 UserId = 10
 
-            });
+            }) as OkObjectResult;
             Assert.That(result, Is.Not.Null);
-            Assert.That(result, Is.True);
+            Assert.That(result.StatusCode,Is.EqualTo(200));
         }
         [Test]
         public async Task DeleteCoupon_Valid_Return()
         {
             mockCouponManagementHelper.Setup(d => d.GetAllCoupon(It.IsAny<int>())).ReturnsAsync(mockCouponData.couponDetails);
-            var result = await couponController.DeleteCoupon(10);
-            Assert.That(result, Is.Null);
+            var result = await couponController.DeleteCoupon(10) as OkObjectResult;
+            Assert.That(result, Is.Not.Null);
+            Assert.That(result.StatusCode, Is.EqualTo(200));
 
         }
 
@@ -95,9 +97,9 @@ namespace CouponManagementTestCase.Controller
                 CreateDate = DateTime.Now,
                 UpdatedDate = DateTime.Now,
                 UserId = 10
-            });
+            }) as OkObjectResult;
             Assert.That(result, Is.Not.Null);
-            Assert.That(result, Is.EqualTo(true));
+            Assert.That(result.StatusCode, Is.EqualTo(200));
         }
 
     }

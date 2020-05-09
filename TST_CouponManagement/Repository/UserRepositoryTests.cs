@@ -2,6 +2,7 @@
 using CouponManagementDBEntity.Models;
 using CouponManagementDBEntity.Repository;
 using CouponManagementTestCase.DATA;
+using Microsoft.AspNetCore.Mvc;
 using NUnit.Framework;
 using SHR_Model.Models;
 using System;
@@ -86,39 +87,49 @@ namespace CouponManagementTestCase.Repository
         /// <param name="user"></param>
         /// <returns></returns>
         [Test]
-        public async Task UpdateUser_Valid_Returns(UserDetails user)
+        public async Task UpdateUser_Valid_Returns()
         {
             mockCouponManagementContext.UserDetails.AddRange(mockUserDatas.userDetails);
             await mockCouponManagementContext.SaveChangesAsync();
-            var getUserById = await userRepository.GetUser(10);
-            user.EmailAddr = "hello@cognizant.com";
-            var updateUser = await userRepository.UpdateUser(user);
-            UserDetails user1 = await userRepository.GetUser(10);
-            Assert.AreSame(user, user1);
+            var result = await userRepository.UpdateUser(new UserDetails()
+            {
+                UserId = 67,
+                UserName = "Abc",
+                EmailAddr = "Abc@gmail.com",
+                UserPassword = "4545",
+                UserAddress = "Ap",
+                CreateDate = DateTime.Now,
+                UpdatedDate = DateTime.Now,
+                PhoneNumber = "9874563210",
+                FirstName = "Abc",
+                LastName = "Xyz"
+            });
+            Assert.That(result, Is.Not.Null);
+            Assert.AreEqual(result, true);
         }
         [Test]
-        public async Task UserLogin_Valid(string username, string password)
+        public async Task UserLogin_Valid()
         {
            
                 mockCouponManagementContext.UserDetails.AddRange(mockUserDatas.userDetails);
                 await mockCouponManagementContext.SaveChangesAsync();
 
                 var user = new UserLogin { UserName = "hello1", UserPassword = "hello1" };
-                Task<UserDetails> result = userRepository.UserLogin(user);
-                var s = result.Result;
-                Assert.NotNull(s.UserName);
+                var result = userRepository.UserLogin(user);
+               
+                Assert.NotNull(result);
 
             
         }
         [Test]
-        public async Task UserLogin_Invalid(string username, string pass)
+        public async Task UserLogin_Invalid()
         {
             
                 mockCouponManagementContext.UserDetails.AddRange(mockUserDatas.userDetails);
                 await mockCouponManagementContext.SaveChangesAsync();
-                var user = new UserLogin { UserName = "hai", UserPassword = "hai" };
-                Task<UserDetails> result = userRepository.UserLogin(user);
-                Assert.AreEqual(result.Result, null);
+                var user = new UserLogin { UserName = "hello1", UserPassword = "hello1" };
+               var result = userRepository.UserLogin(user);
+            Assert.That(result, Is.Null);
 
         }
 

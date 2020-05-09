@@ -60,6 +60,8 @@ namespace CouponManagementTestCase.Repository
                 UpdatedDate = DateTime.Now,
                 UserId = 10
             });
+            Assert.That(getCouponId, Is.Not.Null);
+            Assert.That(getCouponId,Is.EqualTo(true));
         }
         /// <summary>
         /// 
@@ -73,8 +75,9 @@ namespace CouponManagementTestCase.Repository
             await mockCouponManagementContext.SaveChangesAsync();
             mockCouponManagementContext.CouponDetails.AddRange(mockCouponData.couponDetails);
             await mockCouponManagementContext.SaveChangesAsync();
-            var getAllCoupon = await couponRepository.DeleteCoupon(10);
-            Assert.That(getAllCoupon, Is.Null);
+            var result = await couponRepository.DeleteCoupon(10);
+            Assert.That(result, Is.Not.Null);
+            Assert.That(result,Is.EqualTo(true));
 
 
         }
@@ -84,7 +87,7 @@ namespace CouponManagementTestCase.Repository
         /// <param name="coupon"></param>
         /// <returns></returns>
         [Test]
-        public async Task UpdateCoupon_Valid_Returns(CouponDetails coupon)
+        public async Task UpdateCoupon_Valid_Returns()
         {
             //mockCouponManagementContext.UserDetails.AddRange(mockUserDatas.userDetails);
             //await mockCouponManagementContext.SaveChangesAsync();

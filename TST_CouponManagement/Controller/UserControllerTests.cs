@@ -1,9 +1,12 @@
 ﻿using CouponManagementDBEntity.Models;
 using CouponManagementTestCase.DATA;
+using Microsoft.AspNetCore.Mvc;
 using Moq;
 using NUnit.Framework;
+using SHR_Model.Models;
 using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using UserManagement;
@@ -31,20 +34,20 @@ namespace CouponManagementTestCase.Controller
         public async Task GetAllUsers_Valid_Return()
         {
             mockUserManagementHelper.Setup(d => d.GetAllUsers()).ReturnsAsync(mockUserDatas.userDetails);
-           var result= await userController.GetAllUsers();
+           var result= await userController.GetAllUsers() as OkObjectResult;
             Assert.That(result, Is.Not.Null);
         }
         /// <summary>
         /// To Test the Exception for GetAllUsers
         /// </summary>
         /// <returns></returns>
-        [Test]
-        public async Task GetAllUsers_Invalid_ReturnsNull()
-        {
-            mockUserManagementHelper.Setup(d => d.GetAllUsers()).ReturnsAsync((List<UserDetails>)(null));
-            var result = await userController.GetAllUsers();
-            Assert.That(result, Is.Null);
-        }
+        //[Test]
+        //public async Task GetAllUsers_Invalid_ReturnsNull()
+        //{
+        //    mockUserManagementHelper.Setup(d => d.GetAllUsers()).ReturnsAsync((List<UserDetails>)(null));
+        //    var result = await userController.GetAllUsers() as OkObjectResult;
+        //    Assert.That(result.StatusCode, Is.EqualTo(200));
+        //}
         /// <summary>
         /// to test the GetUser
         /// </summary>
@@ -53,7 +56,7 @@ namespace CouponManagementTestCase.Controller
         public async Task GetUser_Valid_Returns()
         {
             mockUserManagementHelper.Setup(d => d.GetUser(It.IsAny<int>())).ReturnsAsync(new UserDetails());
-            var result = await userController.GetUser(10);
+            var result = await userController.GetUser(10) as OkObjectResult;
             Assert.That(result, Is.Not.Null);
         }
         /// <summary>
@@ -64,22 +67,22 @@ namespace CouponManagementTestCase.Controller
         public async Task GetUser_Invalid_ReturnsNull()
          {
             mockUserManagementHelper.Setup(d => d.GetUser(It.IsAny<int>())).ReturnsAsync(new UserDetails());
-            var result = await userController.GetUser(10);
-            Assert.That(result, Is.Null);
+            var result = await userController.GetUser(100) as OkObjectResult;
+            Assert.That(result.StatusCode,Is.EqualTo(404));
         }
-        //[Test]
-        //public async Task UserLogin_Valid_Returns()
-        //{
-        //    mockUserManagementHelper.Setup(d => d.UserLogin(It.IsAny<UserDetails>())).ReturnsAsync(default(string));
-        //    var result = await userController.UserLogin(new UserDetails()
-        //    {
-        //        UserName = "hello",
-        //        UserPassword = "hello"
-        //    });
-        //    Assert.That(result, Is.Not.Null);
-        //    Assert.That(result, Is.EqualTo(true));
+        [Test]
+        public async Task UserLogin_Valid_Returns()
+        {
+            mockUserManagementHelper.Setup(d => d.UserLogin(It.IsAny<UserLogin>()));
+            var result = await userController.UserLogin(new UserLogin()
+            {
+                UserName = "hello",
+                UserPassword = "hello"
+            }) as OkObjectResult;
+            Assert.That(result, Is.Not.Null);
+            Assert.That(result.StatusCode,Is.EqualTo(200));
 
-        //}
+        }
         /// <summary>
         /// to test userRegister
         /// </summary>
@@ -100,9 +103,9 @@ namespace CouponManagementTestCase.Controller
                 PhoneNumber = "9874563210",
                 FirstName = "Abc",
                 LastName = "Xyz"
-            });
+            }) as OkObjectResult;
             Assert.That(result, Is.Not.Null);
-            Assert.That(result, Is.EqualTo(true));
+            Assert.That(result.StatusCode, Is.EqualTo(200));
         }
         /// <summary>
         /// to test update user 
@@ -111,7 +114,7 @@ namespace CouponManagementTestCase.Controller
         [Test]
         public async Task UpdateUser_valid_Returns()
         {
-            mockUserManagementHelper.Setup(d => d.UpdateUser(It.IsAny<UserDetails>())).ReturnsAsync(new Boolean());
+            mockUserManagementHelper.Setup(d => d.UpdateUser(It.IsAny<UserDetails>())).ReturnsAsync(true);
             var result = await userController.UpdateUser(new UserDetails()
             {
                 UserId = 10,
@@ -124,9 +127,9 @@ namespace CouponManagementTestCase.Controller
                 PhoneNumber = "9874563210",
                 FirstName = "Abc1",
                 LastName = "Xyz"
-            });
+            }) as OkObjectResult;
             Assert.That(result, Is.Not.Null);
-            Assert.That(result, Is.EqualTo(true));
+            Assert.That(result.StatusCode, Is.EqualTo(200));
         }
     }
 }
