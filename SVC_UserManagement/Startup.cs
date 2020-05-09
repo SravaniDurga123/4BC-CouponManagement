@@ -35,7 +35,7 @@ namespace UserManagement
             
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API USER", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API USER",Description="Coupon Functionalities", Version = "v1" });
               
             });
         }

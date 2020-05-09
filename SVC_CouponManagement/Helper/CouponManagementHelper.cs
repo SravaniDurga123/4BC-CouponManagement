@@ -23,6 +23,11 @@ namespace CouponManagement.Helper
         {
             _iCoupounRepositoty = iCouponRepository;
         }
+        /// <summary>
+        /// adding coupon
+        /// </summary>
+        /// <param name="coupon"></param>
+        /// <returns></returns>
         public async Task<bool> AddCoupon(CouponDetails coupon)
         {
             try
@@ -38,7 +43,11 @@ namespace CouponManagement.Helper
                 throw;
             }
         }
-
+        /// <summary>
+        /// deleting  coupon based on couponid
+        /// </summary>
+        /// <param name="couponId"></param>
+        /// <returns></returns>
         public async Task<bool> DeleteCoupon(int couponId)
         {
             try
@@ -54,7 +63,11 @@ namespace CouponManagement.Helper
                 throw;
             }
         }
-
+        /// <summary>
+        /// Getting all coupons of a particular user
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
         public async Task<List<CouponDetails>> GetAllCoupon(int userId)
         {
             try
@@ -66,6 +79,10 @@ namespace CouponManagement.Helper
                 throw;
             }
         }
+        /// <summary>
+        /// updating coupon status
+        /// </summary>
+        /// <returns></returns>
 
         public async Task<bool> Status()
         {
@@ -78,6 +95,11 @@ namespace CouponManagement.Helper
                 throw;
             }
         }
+        /// <summary>
+        /// Updating coupon details
+        /// </summary>
+        /// <param name="coupon"></param>
+        /// <returns></returns>
 
         public async Task<bool> UpdateCoupon(CouponDetails coupon)
         {

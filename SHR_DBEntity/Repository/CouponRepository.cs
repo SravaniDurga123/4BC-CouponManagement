@@ -16,7 +16,7 @@ namespace CouponManagementDBEntity.Repository
             _couponManagementContext = couponManagementContext;
         }
         /// <summary>
-        /// 
+        /// To add a new coupon
         /// </summary>
         /// <param name="coupon"></param>
         /// <returns></returns>
@@ -31,13 +31,13 @@ namespace CouponManagementDBEntity.Repository
                 else
                     return false;
             }
-            catch(Exception e)
+            catch
             {
                 throw;
             }
         }
         /// <summary>
-        /// 
+        /// For deleting coupon based on couponid
         /// </summary>
         /// <param name="couponId"></param>
         /// <returns></returns>
@@ -59,7 +59,7 @@ namespace CouponManagementDBEntity.Repository
             }
         }
         /// <summary>
-        /// 
+        /// Viewing all coupons of a particular user
         /// </summary>
         /// <param name="userId"></param>
         /// <returns></returns>
@@ -75,7 +75,7 @@ namespace CouponManagementDBEntity.Repository
             }
         }
         /// <summary>
-        /// 
+        /// Updaating coupon status 
         /// </summary>
         /// <returns></returns>
         public async Task<bool> Status()
@@ -109,7 +109,7 @@ namespace CouponManagementDBEntity.Repository
             }
         }
         /// <summary>
-        /// 
+        /// Updating coupon Details 
         /// </summary>
         /// <param name="coupon"></param>
         /// <returns></returns>

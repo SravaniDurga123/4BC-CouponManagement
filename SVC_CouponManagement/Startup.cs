@@ -30,7 +30,7 @@ namespace CouponManagement
       .AddControllersAsServices();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API COUPON", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API COUPON", Description="Coupon Functionalities",Version = "v1" });
 
             });
         }

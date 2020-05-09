@@ -24,7 +24,7 @@ namespace UserManagement.Helper
             {
                 return await _couponManagementContext.UserDetails.ToListAsync();
             }
-            catch(Exception e)
+            catch
             {
                 throw;
             }
@@ -43,7 +43,7 @@ namespace UserManagement.Helper
                  return await _couponManagementContext.UserDetails.FindAsync(userId);
 
             }
-            catch(Exception )
+            catch
             {
                 throw;
             }
@@ -65,7 +65,7 @@ namespace UserManagement.Helper
                     return true;
                 else return false;
             }
-            catch(Exception e)
+            catch
             {
                 throw;
             }
@@ -85,7 +85,7 @@ namespace UserManagement.Helper
                 else
                     return userDetails;
             }
-            catch(Exception e)
+            catch
             {
                 throw;
             }
@@ -111,7 +111,7 @@ namespace UserManagement.Helper
                 else
                     return "false";
             }
-            catch(Exception e)
+            catch
             {
                 throw;
             }
