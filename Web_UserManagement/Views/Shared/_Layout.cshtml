@@ -19,12 +19,19 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="GetUsers">User</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="UserLogin">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Coupon" asp-action="GetCoupons">Coupon</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="UserRegister">Register</a>
                         </li>
+                        <ul class="navbar-nav flex-grow-0 " style="margin-left:500px">
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="UserLogin">SignOut</a>
+                            </li>
+                        </ul>
                     </ul>
+                    
                 </div>
             </div>
         </nav>

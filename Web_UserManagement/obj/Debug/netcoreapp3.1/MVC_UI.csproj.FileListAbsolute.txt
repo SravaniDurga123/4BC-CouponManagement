@@ -538,7 +538,6 @@ F:\clone\4BC-CouponManagement\Web_UserManagement\bin\Debug\netcoreapp3.1\ru\Micr
 F:\clone\4BC-CouponManagement\Web_UserManagement\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 F:\clone\4BC-CouponManagement\Web_UserManagement\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 F:\clone\4BC-CouponManagement\Web_UserManagement\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\clone\4BC-CouponManagement\Web_UserManagement\obj\Debug\netcoreapp3.1\MVC_UI.csprojAssemblyReference.cache
 F:\clone\4BC-CouponManagement\Web_UserManagement\obj\Debug\netcoreapp3.1\MVC_UI.csproj.CoreCompileInputs.cache
 F:\clone\4BC-CouponManagement\Web_UserManagement\obj\Debug\netcoreapp3.1\MVC_UI.MvcApplicationPartsAssemblyInfo.cache
 F:\clone\4BC-CouponManagement\Web_UserManagement\obj\Debug\netcoreapp3.1\MVC_UI.RazorAssemblyInfo.cache
@@ -574,3 +573,6 @@ F:\clone\4BC-CouponManagement\Web_UserManagement\obj\Debug\netcoreapp3.1\Razor\V
 F:\clone\4BC-CouponManagement\Web_UserManagement\obj\Debug\netcoreapp3.1\Razor\Views\Coupon\CouponRegister.cshtml.g.cs
 F:\clone\4BC-CouponManagement\Web_UserManagement\obj\Debug\netcoreapp3.1\Razor\Views\Coupon\DeleteCoupon.cshtml.g.cs
 F:\clone\4BC-CouponManagement\Web_UserManagement\obj\Debug\netcoreapp3.1\Razor\Views\Coupon\UpdateCoupon.cshtml.g.cs
+F:\clone\4BC-CouponManagement\Web_UserManagement\obj\Debug\netcoreapp3.1\Razor\Views\Coupon\CouponsByuserId.cshtml.g.cs
+F:\clone\4BC-CouponManagement\Web_UserManagement\obj\Debug\netcoreapp3.1\MVC_UI.csprojAssemblyReference.cache
+F:\clone\4BC-CouponManagement\Web_UserManagement\obj\Debug\netcoreapp3.1\Razor\Views\Coupon\Delete.cshtml.g.cs

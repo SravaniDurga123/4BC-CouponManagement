@@ -38,9 +38,10 @@ namespace MVC_UI.Controllers
         public async Task<IActionResult> GetUserById(int id)
         {
             UserDetails user = new UserDetails();
+            int userId = Convert.ToInt32(TempData["userid"]);
             using (var httpClient = new HttpClient())
             {
-                using (var response = await httpClient.GetAsync("http://localhost:50443/api/v1/GetUser/" + id))
+                using (var response = await httpClient.GetAsync("http://localhost:50443/api/v1/GetUser/" + userId))
                 {
                     var apiResponse = await response.Content.ReadAsStringAsync();
                     user = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
@@ -73,7 +74,7 @@ namespace MVC_UI.Controllers
                     //user1 = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
                 }
             }
-            return RedirectToAction("GetUsers");
+            return RedirectToAction("UserLogin");
         }
         public async Task<IActionResult> UserLogin()
         {
@@ -101,7 +102,17 @@ namespace MVC_UI.Controllers
             }
             if(apiResponse== "successfully logged in")
             {
-               return RedirectToAction("GetUsers");
+                int userId;
+               using (var httpClient=new HttpClient())
+                {
+                    using (var response = await httpClient.GetAsync("http://localhost:50443/api/v1/GetIdByName/" + userDetails.UserName)) 
+                    {
+                        apiResponse = await response.Content.ReadAsStringAsync();
+                        userId = JsonConvert.DeserializeObject<Int32>(apiResponse);
+                    }
+                    TempData["userid"] = userId;
+                    return RedirectToAction("CouponsByUserId", "Coupon", new { id = userId });
+                }
             }
             else
             {
@@ -143,7 +154,7 @@ namespace MVC_UI.Controllers
                     //user = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
                 }
             }
-            return RedirectToAction("GetUsers");
+            return RedirectToAction("CouponsByUserId", "Coupon", new { id = userdetails.UserId });
         }
 
 

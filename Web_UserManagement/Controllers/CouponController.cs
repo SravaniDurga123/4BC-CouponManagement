@@ -33,6 +33,22 @@ namespace MVC_UI.Controllers
             }
             return View(couponDetails);
         }
+        [HttpGet]
+        public async Task<IActionResult> CouponsByUserId(int id)
+        {
+            List<CouponDetails> couponDetails = new List<CouponDetails>();
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync("http://localhost:50187/api/v2/GetAllCoupons/" + id))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    couponDetails = JsonConvert.DeserializeObject<List<CouponDetails>>(apiResponse);
+                }
+            }
+            TempData["userid"] = id;
+            Console.WriteLine(couponDetails);
+            return View(couponDetails);
+        }
         /// <summary>
         /// viewing the particular coupon details
         /// </summary>
@@ -61,9 +77,12 @@ namespace MVC_UI.Controllers
         /// <param name="coupon"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IActionResult> CouponRegister(CouponDetails coupon)
+        public async Task<IActionResult> CouponRegister(CouponDetails coupons)
         {
+            CouponDetails coupon = coupons;
             coupon.CreateDate = DateTime.Now;
+            int userId = Convert.ToInt32(TempData["userid"]);
+            coupon.UserId = userId;
             using (var httpClient = new HttpClient())
             {
                 StringContent content = new StringContent(JsonConvert.SerializeObject(coupon), Encoding.UTF8, "application/json");
@@ -74,10 +93,10 @@ namespace MVC_UI.Controllers
                     //user1 = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
                 }
             }
-            return RedirectToAction("GetCoupons");
+            return RedirectToAction("CouponsByUserId", "Coupon", new { id = coupon.UserId });
         }
         [HttpGet]
-        public async Task<IActionResult> DeleteCoupon(int? id)
+        public async Task<IActionResult> Delete(int? id)
         {
 
             CouponDetails coupon = new CouponDetails();
@@ -89,6 +108,7 @@ namespace MVC_UI.Controllers
                     coupon = JsonConvert.DeserializeObject<CouponDetails>(apiResponse);
                 }
             }
+            TempData["userid"] = id;
             return View(coupon);
         }
         /// <summary>
@@ -96,14 +116,14 @@ namespace MVC_UI.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [HttpPost,ActionName("DeleteCoupon")] 
+        [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteCoupon(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             CouponDetails coupon1 = new CouponDetails();
             using (var httpClient = new HttpClient())
             {
-               
+
 
                 using (var response = await httpClient.DeleteAsync("http://localhost:50187/api/v2/DeleteCoupon/"+id))
                 {
@@ -111,7 +131,9 @@ namespace MVC_UI.Controllers
                     //user1 = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
                 }
             }
-            return RedirectToAction("GetCoupons");
+            TempData["userid"] = id;
+            return RedirectToAction("CouponsByUserId", "Coupon", new { id = TempData["userid"] });
+                   
         }
 
         [HttpGet]
@@ -147,7 +169,7 @@ namespace MVC_UI.Controllers
                     //coupon1 = JsonConvert.DeserializeObject<CouponDetails>(apiResponse);
                 }
             }
-            return RedirectToAction("GetCoupons");
+            return RedirectToAction("CouponsByUserId", "Coupon", new { id = coupon.UserId });
         }
 
     }

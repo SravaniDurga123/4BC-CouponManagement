@@ -63,8 +63,8 @@ namespace CouponManagement
         /// <param name="userId"></param>
         /// <returns></returns>
         [HttpGet]
-        [Route("GetCoupons/{userId}")]
-        public async Task<IActionResult> GetCoupons(int userId)
+        [Route("GetAllCoupons/{userId}")]
+        public async Task<IActionResult> GetAllCoupons(int userId)
         {
             try
             {
