@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace UserManagement.Models
+namespace MVC_UI.Models
 {
-    public partial class CouponDetails
+    public class CouponDetails
     {
         public int CouponId { get; set; }
         public string CouponNumber { get; set; }
@@ -13,7 +15,5 @@ namespace UserManagement.Models
         public DateTime CreateDate { get; set; }
         public DateTime? UpdatedDate { get; set; }
         public int? UserId { get; set; }
-
-        public virtual UserDetails User { get; set; }
     }
 }

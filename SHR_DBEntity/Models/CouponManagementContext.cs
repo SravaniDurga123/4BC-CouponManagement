@@ -23,7 +23,7 @@ namespace CouponManagementDBEntity.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=DESKTOP-APKG6MF\\SQLEXPRESS;Database=CouponManagement;User Id=sa; Password=@rR3010@;");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-KJSLJO5\\SQLEXPRESS;Database=CouponManagement;User Id=sa; Password=sravani;");
             }
         }
 
@@ -32,9 +32,7 @@ namespace CouponManagementDBEntity.Models
             modelBuilder.Entity<CouponDetails>(entity =>
             {
                 entity.HasKey(e => e.CouponId)
-                    .HasName("PK__CouponDe__384AF1BAF5031E5D");
-
-                entity.Property(e => e.CouponId).ValueGeneratedNever();
+                    .HasName("PK__CouponDe__384AF1BA1B25FEAF");
 
                 entity.Property(e => e.CouponExpiredDate).HasColumnType("datetime");
 
@@ -57,16 +55,16 @@ namespace CouponManagementDBEntity.Models
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.CouponDetails)
                     .HasForeignKey(d => d.UserId)
-                    .HasConstraintName("FK__CouponDet__UserI__267ABA7A");
+                    .HasConstraintName("FK__CouponDet__UserI__300424B4");
             });
 
             modelBuilder.Entity<UserDetails>(entity =>
             {
                 entity.HasKey(e => e.UserId)
-                    .HasName("PK__UserDeta__1788CC4C14B056D6");
+                    .HasName("PK__UserDeta__1788CC4C367E4FCF");
 
                 entity.HasIndex(e => e.UserName)
-                    .HasName("UQ__UserDeta__C9F2845622E3386F")
+                    .HasName("UQ__UserDeta__C9F284560F09F1D9")
                     .IsUnique();
 
                 entity.Property(e => e.CreateDate).HasColumnType("datetime");
@@ -96,7 +94,6 @@ namespace CouponManagementDBEntity.Models
                     .IsUnicode(false);
 
                 entity.Property(e => e.UserName)
-                    .IsRequired()
                     .HasMaxLength(30)
                     .IsUnicode(false);
 

@@ -45,8 +45,8 @@ namespace CouponManagementDBEntity.Repository
         {
             try
             {
-                CouponDetails couponDetails = _couponManagementContext.CouponDetails.Find(couponId);
-                _couponManagementContext.Remove(couponDetails);
+                CouponDetails coupon = _couponManagementContext.CouponDetails.Find(couponId);
+                _couponManagementContext.Remove(coupon);
                 int result = await _couponManagementContext.SaveChangesAsync();
                 if (result > 0)
                     return true;
@@ -74,6 +74,39 @@ namespace CouponManagementDBEntity.Repository
                 throw;
             }
         }
+        /// <summary>
+        /// view the details of coupon
+        /// </summary>
+        /// <param name="couponId"></param>
+        /// <returns></returns>
+        public async Task<CouponDetails> GetCouponById(int couponId)
+        {
+            try
+            {
+                CouponDetails couponDetails = await _couponManagementContext.CouponDetails.FindAsync(couponId);
+                return couponDetails;
+            }
+            catch
+            {
+                throw;
+            }
+        }
+        /// <summary>
+        /// To view the list Of coupons
+        /// </summary>
+        /// <returns></returns>
+        public async Task<List<CouponDetails>> GetCoupons()
+        {
+            try
+            {
+                return await _couponManagementContext.CouponDetails.ToListAsync();
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
         /// <summary>
         /// Updaating coupon status 
         /// </summary>

@@ -112,5 +112,31 @@ namespace CouponManagement
                 return NotFound(e.Message);
             }
         }
+        [HttpGet]
+        [Route("GetCoupons")]
+        public async Task<IActionResult> GetCoupons()
+        {
+            try
+            {
+                return Ok(await _iCouponManagementHelper.GetCoupons());
+            }
+            catch(Exception e)
+            {
+                return NotFound(e.Message);
+            }
+        }
+        [HttpGet]
+        [Route("GetCouponById/{couponId}")]
+        public async Task<IActionResult> GetCouponById(int couponId)
+        {
+            try
+            {
+                return Ok(await _iCouponManagementHelper.GetCouponById(couponId));
+            }
+            catch(Exception e)
+            {
+                return NotFound(e.Message);
+            }
+        }
     }
 }

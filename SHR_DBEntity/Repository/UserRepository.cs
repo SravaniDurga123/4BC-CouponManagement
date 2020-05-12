@@ -29,6 +29,23 @@ namespace UserManagement.Helper
                 throw;
             }
         }
+        /// <summary>
+        /// Get Id By userName
+        /// </summary>
+        /// <param name="userName"></param>
+        /// <returns></returns>
+        public async Task<int> GetIdByName(string userName)
+        {
+           try
+            {
+                UserDetails user = await _couponManagementContext.UserDetails.SingleOrDefaultAsync(e => e.UserName == userName);
+                return user.UserId;
+            }
+            catch
+            {
+                throw;
+            }
+        }
 
         /// <summary>
         /// To view the profile of the user

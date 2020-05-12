@@ -10,6 +10,8 @@ namespace CouponManagement.Helper
 {
     public interface ICouponManagementHelper
     {
+        Task<List<CouponDetails>> GetCoupons();
+        Task<CouponDetails> GetCouponById(int couponId);
         Task<List<CouponDetails>> GetAllCoupon(int userId);
         Task<bool> AddCoupon(CouponDetails coupon);
         Task<bool> UpdateCoupon(CouponDetails coupon);
@@ -79,6 +81,31 @@ namespace CouponManagement.Helper
                 throw;
             }
         }
+
+        public async Task<CouponDetails> GetCouponById(int couponId)
+        {
+            try
+            {
+                return await _iCoupounRepositoty.GetCouponById(couponId);
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+        public async Task<List<CouponDetails>> GetCoupons()
+        {
+           try
+            {
+                return await _iCoupounRepositoty.GetCoupons();
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
         /// <summary>
         /// updating coupon status
         /// </summary>

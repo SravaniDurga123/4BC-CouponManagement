@@ -15,6 +15,7 @@ namespace UserManagement.Helper
         Task<bool> UpdateUser(UserDetails user);
         Task<UserDetails> GetUser(int userId);
         Task<List<UserDetails>> GetAllUsers();
+        Task<int> GetIdByName(string userName);
     }
     public class UserManagementHelper : IUserManagementHelper
     {
@@ -38,6 +39,23 @@ namespace UserManagement.Helper
                 throw;
             }
         }
+        /// <summary>
+        /// Get Id by using userName
+        /// </summary>
+        /// <param name="userName"></param>
+        /// <returns></returns>
+        public  async Task<int> GetIdByName(string userName)
+        {
+           try
+            {
+                return await _iUserRepository.GetIdByName(userName);
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
         /// <summary>
         /// getting user by id 
         /// </summary>

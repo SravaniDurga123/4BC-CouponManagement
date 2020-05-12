@@ -6071,23 +6071,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rishika Rani\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Maragani jagadeesh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\4BC-CouponManagement\\Web_UserManagement\\MVC_UI.csproj",
+      "projectUniqueName": "F:\\clone\\4BC-CouponManagement\\Web_UserManagement\\MVC_UI.csproj",
       "projectName": "MVC_UI",
-      "projectPath": "G:\\4BC-CouponManagement\\Web_UserManagement\\MVC_UI.csproj",
-      "packagesPath": "C:\\Users\\Rishika Rani\\.nuget\\packages\\",
-      "outputPath": "G:\\4BC-CouponManagement\\Web_UserManagement\\obj\\",
+      "projectPath": "F:\\clone\\4BC-CouponManagement\\Web_UserManagement\\MVC_UI.csproj",
+      "packagesPath": "C:\\Users\\Maragani jagadeesh\\.nuget\\packages\\",
+      "outputPath": "F:\\clone\\4BC-CouponManagement\\Web_UserManagement\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Rishika Rani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Maragani jagadeesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

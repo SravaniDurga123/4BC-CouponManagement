@@ -52,3 +52,12 @@ E:\CouponManagement-CaseStudy\4BC-CouponManagement\SHR_Utility\obj\Debug\netcore
 E:\CouponManagement-CaseStudy\4BC-CouponManagement\SHR_Utility\obj\Debug\netcoreapp3.1\SHR_Utility.AssemblyInfo.cs
 E:\CouponManagement-CaseStudy\4BC-CouponManagement\SHR_Utility\obj\Debug\netcoreapp3.1\SHR_Utility.dll
 E:\CouponManagement-CaseStudy\4BC-CouponManagement\SHR_Utility\obj\Debug\netcoreapp3.1\SHR_Utility.pdb
+F:\clone\4BC-CouponManagement\SHR_Utility\bin\Debug\netcoreapp3.1\SHR_Utility.deps.json
+F:\clone\4BC-CouponManagement\SHR_Utility\bin\Debug\netcoreapp3.1\SHR_Utility.dll
+F:\clone\4BC-CouponManagement\SHR_Utility\bin\Debug\netcoreapp3.1\SHR_Utility.pdb
+F:\clone\4BC-CouponManagement\SHR_Utility\obj\Debug\netcoreapp3.1\SHR_Utility.csprojAssemblyReference.cache
+F:\clone\4BC-CouponManagement\SHR_Utility\obj\Debug\netcoreapp3.1\SHR_Utility.csproj.CoreCompileInputs.cache
+F:\clone\4BC-CouponManagement\SHR_Utility\obj\Debug\netcoreapp3.1\SHR_Utility.AssemblyInfoInputs.cache
+F:\clone\4BC-CouponManagement\SHR_Utility\obj\Debug\netcoreapp3.1\SHR_Utility.AssemblyInfo.cs
+F:\clone\4BC-CouponManagement\SHR_Utility\obj\Debug\netcoreapp3.1\SHR_Utility.dll
+F:\clone\4BC-CouponManagement\SHR_Utility\obj\Debug\netcoreapp3.1\SHR_Utility.pdb

@@ -23,9 +23,9 @@ namespace CouponManagement
             //services.AddTransient<ICouponRepository,CouponRepository>();
             //services.AddTransient<ICouponManagementHelper, CouponManagementHelper>();
             services.AddMvc();
-            services.AddSingleton<ICouponRepository, CouponRepository>();
-            services.AddSingleton<ICouponManagementHelper, CouponManagementHelper>();
-            services.AddSingleton<CouponManagementContext>();
+            services.AddTransient<ICouponRepository, CouponRepository>();
+            services.AddTransient<ICouponManagementHelper, CouponManagementHelper>();
+            services.AddTransient<CouponManagementContext>();
             services.AddControllers()
       .AddControllersAsServices();
             services.AddSwaggerGen(c =>

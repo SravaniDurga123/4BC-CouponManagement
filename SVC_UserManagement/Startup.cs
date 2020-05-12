@@ -26,10 +26,10 @@ namespace UserManagement
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddSingleton<IUserRepository, UserRepository>();
-            services.AddSingleton<IUserManagementHelper, UserManagementHelper>();
+            services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<IUserManagementHelper, UserManagementHelper>();
             //services.AddSingleton<IUserRepository, UserRepository>();
-            services.AddSingleton<CouponManagementContext>();
+            services.AddTransient<CouponManagementContext>();
             services.AddControllers();
             services.AddControllersWithViews();
             

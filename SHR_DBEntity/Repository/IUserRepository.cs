@@ -15,5 +15,6 @@ namespace CouponManagementDBEntity.Repository
         Task<UserDetails> GetUser(int userId);
 
         Task<List<UserDetails>> GetAllUsers();
+        Task<int> GetIdByName(string userName);
     }
 }

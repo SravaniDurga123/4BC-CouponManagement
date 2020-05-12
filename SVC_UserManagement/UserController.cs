@@ -110,7 +110,7 @@ namespace UserManagement
             }
         }
         /// <summary>
-        /// 
+        /// To view the all users
         /// </summary>
         /// <returns></returns>
         [HttpGet]
@@ -126,6 +126,27 @@ namespace UserManagement
                 return NotFound(e.Message);
             }
         }
+
+        /// <summary>
+        /// Get Id by using userName
+        /// </summary>
+        /// <param name="userName"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("GetIdByName/{userName}")]
+        public async Task<IActionResult> GetIdByName(string userName)
+        {
+            try
+            {
+                return Ok(await _iUserManagementHelper.GetIdByName(userName));
+            }
+            catch(Exception e)
+            {
+                return NotFound(e.Message);
+            }
+
+        }
+        
     }
 
    
