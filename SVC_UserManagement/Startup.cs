@@ -15,7 +15,8 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.Extensions.Logging;
-
+using System.Reflection;
+using System.IO;
 
 namespace UserManagement
 {
@@ -32,11 +33,17 @@ namespace UserManagement
             services.AddTransient<CouponManagementContext>();
             services.AddControllers();
             services.AddControllersWithViews();
-            
+
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API USER",Description="Coupon Functionalities", Version = "v1" });
-              
+                c.SwaggerDoc("v1", new OpenApiInfo
+                { Title = "UserManagement", Description = "Describes the Functionalities of User", Version = "v1" });
+
+
+                // Set the comments path for the Swagger JSON and UI.
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
             });
         }
 

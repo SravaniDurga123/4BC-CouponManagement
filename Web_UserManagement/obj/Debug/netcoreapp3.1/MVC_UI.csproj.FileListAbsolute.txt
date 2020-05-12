@@ -576,3 +576,10 @@ F:\clone\4BC-CouponManagement\Web_UserManagement\obj\Debug\netcoreapp3.1\Razor\V
 F:\clone\4BC-CouponManagement\Web_UserManagement\obj\Debug\netcoreapp3.1\Razor\Views\Coupon\CouponsByuserId.cshtml.g.cs
 F:\clone\4BC-CouponManagement\Web_UserManagement\obj\Debug\netcoreapp3.1\MVC_UI.csprojAssemblyReference.cache
 F:\clone\4BC-CouponManagement\Web_UserManagement\obj\Debug\netcoreapp3.1\Razor\Views\Coupon\Delete.cshtml.g.cs
+D:\CouponManagement\4BC-CouponManagement\Web_UserManagement\obj\Debug\netcoreapp3.1\Razor\Views\Coupon\CouponRegister.cshtml.g.cs
+D:\CouponManagement\4BC-CouponManagement\Web_UserManagement\obj\Debug\netcoreapp3.1\Razor\Views\Coupon\CouponsByUserId.cshtml.g.cs
+D:\CouponManagement\4BC-CouponManagement\Web_UserManagement\obj\Debug\netcoreapp3.1\Razor\Views\Coupon\Delete.cshtml.g.cs
+D:\CouponManagement\4BC-CouponManagement\Web_UserManagement\obj\Debug\netcoreapp3.1\Razor\Views\Coupon\DeleteCoupon.cshtml.g.cs
+D:\CouponManagement\4BC-CouponManagement\Web_UserManagement\obj\Debug\netcoreapp3.1\Razor\Views\Coupon\GetCouponById.cshtml.g.cs
+D:\CouponManagement\4BC-CouponManagement\Web_UserManagement\obj\Debug\netcoreapp3.1\Razor\Views\Coupon\GetCoupons.cshtml.g.cs
+D:\CouponManagement\4BC-CouponManagement\Web_UserManagement\obj\Debug\netcoreapp3.1\Razor\Views\Coupon\UpdateCoupon.cshtml.g.cs

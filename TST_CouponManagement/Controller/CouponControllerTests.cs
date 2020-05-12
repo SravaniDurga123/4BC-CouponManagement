@@ -32,7 +32,7 @@ namespace CouponManagementTestCase.Controller
         public async Task GetAllCoupons_Valid_Return()
         {
             mockCouponManagementHelper.Setup(d => d.GetAllCoupon(It.IsAny<int>())).ReturnsAsync(mockCouponData.couponDetails);
-            var result = await couponController.GetCoupons(10);
+            var result = await couponController.GetAllCoupons(10);
             Assert.That(result, Is.Not.Null);
         }
         /// <summary>
@@ -43,7 +43,7 @@ namespace CouponManagementTestCase.Controller
         public async Task GetAllCoupon_InValid_RetunsNull()
         {
             mockCouponManagementHelper.Setup(d => d.GetAllCoupon(It.IsAny<int>())).ReturnsAsync((List<CouponDetails>)(null));
-            var result = await couponController.GetCoupons(10) ;
+            var result = await couponController.GetAllCoupons(10) ;
             Assert.That(result, Is.Null);
         }
         /// <summary>

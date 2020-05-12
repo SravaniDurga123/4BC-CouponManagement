@@ -58,7 +58,7 @@ namespace CouponManagement
             }
         }
         /// <summary>
-        /// viewing all coupon of particular user
+        /// displays all coupons of  the particular user
         /// </summary>
         /// <param name="userId"></param>
         /// <returns></returns>
@@ -95,7 +95,7 @@ namespace CouponManagement
             }
         }
         /// <summary>
-        ///  updating the coupon status
+        ///  updating the status of the coupon
         /// </summary>
         /// <returns></returns>
         [HttpPut]
@@ -112,6 +112,10 @@ namespace CouponManagement
                 return NotFound(e.Message);
             }
         }
+        /// <summary>
+        /// displays all the coupons
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         [Route("GetCoupons")]
         public async Task<IActionResult> GetCoupons()
@@ -125,6 +129,11 @@ namespace CouponManagement
                 return NotFound(e.Message);
             }
         }
+        /// <summary>
+        /// displays coupons based on the coupon id
+        /// </summary>
+        /// <param name="couponId"></param>
+        /// <returns></returns>
         [HttpGet]
         [Route("GetCouponById/{couponId}")]
         public async Task<IActionResult> GetCouponById(int couponId)

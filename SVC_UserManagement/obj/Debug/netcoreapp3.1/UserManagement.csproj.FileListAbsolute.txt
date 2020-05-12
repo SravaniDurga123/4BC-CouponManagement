@@ -1666,3 +1666,4 @@ F:\clone\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\staticw
 F:\clone\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.dll
 F:\clone\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.pdb
 F:\clone\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.genruntimeconfig.cache
+D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\bin\Debug\netcoreapp3.1\UserManagement.xml

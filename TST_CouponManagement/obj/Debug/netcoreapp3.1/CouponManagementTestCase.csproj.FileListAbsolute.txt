@@ -1474,3 +1474,5 @@ F:\clone\4BC-CouponManagement\TST_CouponManagement\obj\Debug\netcoreapp3.1\Coupo
 F:\clone\4BC-CouponManagement\TST_CouponManagement\obj\Debug\netcoreapp3.1\CouponManagementTestCase.dll
 F:\clone\4BC-CouponManagement\TST_CouponManagement\obj\Debug\netcoreapp3.1\CouponManagementTestCase.pdb
 F:\clone\4BC-CouponManagement\TST_CouponManagement\obj\Debug\netcoreapp3.1\CouponManagementTestCase.genruntimeconfig.cache
+D:\CouponManagement\4BC-CouponManagement\TST_CouponManagement\bin\Debug\netcoreapp3.1\CouponManagement.xml
+D:\CouponManagement\4BC-CouponManagement\TST_CouponManagement\bin\Debug\netcoreapp3.1\UserManagement.xml

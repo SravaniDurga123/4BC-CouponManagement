@@ -11,6 +11,8 @@ using CouponManagementDBEntity.Repository;
 using CouponManagementDBEntity.Models;
 using CouponManagement.Helper;
 using Microsoft.OpenApi.Models;
+using System.Reflection;
+using System.IO;
 
 namespace CouponManagement
 {
@@ -30,8 +32,14 @@ namespace CouponManagement
       .AddControllersAsServices();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API COUPON", Description="Coupon Functionalities",Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo
+                { Title = "CouponManagement", Description = "Describes the Functionalities of Coupon", Version = "v1" });
 
+
+                // Set the comments path for the Swagger JSON and UI.
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
             });
         }
 
