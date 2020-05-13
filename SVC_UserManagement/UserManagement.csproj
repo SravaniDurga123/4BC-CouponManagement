@@ -2,11 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Nullable>annotations</Nullable>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <NoWarn>1701;1702;1591</NoWarn>
-    <DocumentationFile>D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\UserManagement.xml</DocumentationFile>
+    <DocumentationFile>F:\clone\4BC-CouponManagement\SVC_UserManagement\UserManagement.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

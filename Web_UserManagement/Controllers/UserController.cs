@@ -116,7 +116,8 @@ namespace MVC_UI.Controllers
             }
             else
             {
-               return RedirectToAction("UserLogin");
+                ViewBag.ErrorMessage = "Invalid Credentails";
+                return View();
             }
            
         }

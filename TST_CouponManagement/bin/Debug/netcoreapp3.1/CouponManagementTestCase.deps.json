@@ -2343,7 +2343,8 @@
       "CouponManagement/1.0.0": {
         "dependencies": {
           "CouponManagementDBEntity": "1.0.0",
-          "Swashbuckle.AspNetCore": "5.4.1"
+          "Swashbuckle.AspNetCore": "5.4.1",
+          "log4net": "2.0.8"
         },
         "runtime": {
           "CouponManagement.dll": {}
@@ -2371,7 +2372,8 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.2",
           "Newtonsoft.Json": "12.0.3",
           "SHR_Model": "1.0.0",
-          "Swashbuckle.AspNetCore": "5.4.1"
+          "Swashbuckle.AspNetCore": "5.4.1",
+          "log4net": "2.0.8"
         },
         "runtime": {
           "UserManagement.dll": {}

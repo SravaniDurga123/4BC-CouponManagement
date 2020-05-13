@@ -1667,3 +1667,4 @@ D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\bin\Debug\netcoreapp
 D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.csproj.CoreCompileInputs.cache
 D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.MvcApplicationPartsAssemblyInfo.cs
 D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.MvcApplicationPartsAssemblyInfo.cache
+F:\clone\4BC-CouponManagement\SVC_UserManagement\bin\Debug\netcoreapp3.1\UserManagement.xml

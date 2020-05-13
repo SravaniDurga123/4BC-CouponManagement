@@ -108,7 +108,7 @@ namespace MVC_UI.Controllers
                     coupon = JsonConvert.DeserializeObject<CouponDetails>(apiResponse);
                 }
             }
-            TempData["userid"] = id;
+            TempData["userid"] = coupon.UserId;
             return View(coupon);
         }
         /// <summary>
@@ -131,7 +131,7 @@ namespace MVC_UI.Controllers
                     //user1 = JsonConvert.DeserializeObject<UserDetails>(apiResponse);
                 }
             }
-            TempData["userid"] = id;
+            
             return RedirectToAction("CouponsByUserId", "Coupon", new { id = TempData["userid"] });
                    
         }
