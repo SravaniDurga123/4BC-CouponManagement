@@ -6,7 +6,7 @@
     <members>
         <member name="M:UserManagement.Helper.UserManagementHelper.GetAllUsers">
             <summary>
-            getting all users
+            displays all users
             </summary>
             <returns></returns>
         </member>
@@ -56,7 +56,7 @@
             <summary>
             To validate whether the user is authorized or not
             </summary>
-            <param name="value"></param>
+            <param name="user"></param>
             <returns></returns>
         </member>
         <member name="M:UserManagement.UserController.GetUser(System.Int32)">

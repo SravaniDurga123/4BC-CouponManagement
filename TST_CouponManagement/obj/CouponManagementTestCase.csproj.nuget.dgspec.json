@@ -169,6 +169,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.4.1, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.8, )"
             }
           },
           "imports": [
@@ -255,6 +259,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.4.0, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.8, )"
             }
           },
           "imports": [

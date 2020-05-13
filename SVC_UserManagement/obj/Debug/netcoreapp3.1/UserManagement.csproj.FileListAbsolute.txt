@@ -974,9 +974,6 @@ C:\Users\Maragani jagadeesh\Contacts\Desktop\CoupounManagement\4BC-CouponManagem
 C:\Users\Maragani jagadeesh\Contacts\Desktop\CoupounManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.genruntimeconfig.cache
 D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\bin\Debug\netcoreapp3.1\log4net.dll
 D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll
-D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.csproj.CoreCompileInputs.cache
-D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.MvcApplicationPartsAssemblyInfo.cs
-D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.MvcApplicationPartsAssemblyInfo.cache
 D:\GitProject2\CouponManagement\4BC-CouponManagement\SVC_UserManagement\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\GitProject2\CouponManagement\4BC-CouponManagement\SVC_UserManagement\bin\Debug\netcoreapp3.1\appsettings.json
 D:\GitProject2\CouponManagement\4BC-CouponManagement\SVC_UserManagement\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -1667,3 +1664,6 @@ F:\clone\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserMan
 F:\clone\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.pdb
 F:\clone\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.genruntimeconfig.cache
 D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\bin\Debug\netcoreapp3.1\UserManagement.xml
+D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.csproj.CoreCompileInputs.cache
+D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.MvcApplicationPartsAssemblyInfo.cs
+D:\CouponManagement\4BC-CouponManagement\SVC_UserManagement\obj\Debug\netcoreapp3.1\UserManagement.MvcApplicationPartsAssemblyInfo.cache

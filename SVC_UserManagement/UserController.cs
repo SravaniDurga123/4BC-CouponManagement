@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using CouponManagementDBEntity.Models;
 using CouponManagementDBEntity.Repository;
+using log4net;
+using log4net.Config;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -18,11 +22,15 @@ namespace UserManagement
     [ApiController]
     public class UserController : Controller
     {
+        private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
+
 
         private readonly IUserManagementHelper _iUserManagementHelper;
         public UserController(IUserManagementHelper iUserManagementHelper)
         {
             _iUserManagementHelper = iUserManagementHelper;
+            var logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
+            XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
         }
 
         
@@ -37,6 +45,7 @@ namespace UserManagement
         [Produces( "application/json")]
         public async Task<IActionResult> UserRegister(UserDetails user)
         {
+            log.Info("In UserController :  UserRegister(UserDetails user)");
 
             try
             {
@@ -48,18 +57,20 @@ namespace UserManagement
             }
             catch (Exception e)
             {
+                log.Error("Exception UserController: UserRegister(UserDetails user)" + e.Message);
                 return NotFound(e.StackTrace);
             }
         }
         /// <summary>
         /// To validate whether the user is authorized or not
         /// </summary>
-        /// <param name="value"></param>
+        /// <param name="user"></param>
         /// <returns></returns>
         [HttpPost]
         [Route("UserLogin")]
         public async Task<IActionResult> UserLogin(UserLogin user)
         {
+            log.Info("In UserController : UserLogin(UserLogin user)");
             try
             {
                 //null checking
@@ -68,6 +79,7 @@ namespace UserManagement
             }
             catch (Exception e)
             {
+                log.Error("Exception UserController: UserLogin(UserLogin user)" + e.Message);
                 return NotFound(e.Message);
             }
         }
@@ -80,13 +92,16 @@ namespace UserManagement
         [Route("GetUser/{userId}")]
         public async Task<IActionResult> GetUser(int userId)
         {
+            log.Info("In UserController : GetUser(int userId)");
             try
             {
-             UserDetails user=   await _iUserManagementHelper.GetUser(userId);
+                UserDetails user=   await _iUserManagementHelper.GetUser(userId);
+
                 return Ok(user);
             }
             catch (Exception e)
             {
+                log.Error("Exception UserController: GetUser(int userId)"+ e.Message);
                 return NotFound(e.Message);
             }
         }
@@ -99,6 +114,7 @@ namespace UserManagement
         [Route("UpdateUser")]
         public async Task<IActionResult> UpdateUser(UserDetails user)
         {
+            log.Info("In UserController : UpdateUser(UserDetails user)");
             try
             {
                await _iUserManagementHelper.UpdateUser(user);
@@ -106,6 +122,7 @@ namespace UserManagement
             }
             catch (Exception e)
             {
+                log.Error("Exception UserController:UpdateUser(UserDetails user)" + e.Message);
                 return NotFound(e.Message);
             }
         }
@@ -117,12 +134,14 @@ namespace UserManagement
         [Route("GetAllUsers")]
         public async Task<IActionResult> GetAllUsers()
         {
+            log.Info("In UserController :  GetAllUsers()");
             try
             {
                return Ok( await _iUserManagementHelper.GetAllUsers());
             }
             catch(Exception e)
             {
+                log.Error("Exception UserController: GetAllUsers()" + e.Message);
                 return NotFound(e.Message);
             }
         }
@@ -136,12 +155,14 @@ namespace UserManagement
         [Route("GetIdByName/{userName}")]
         public async Task<IActionResult> GetIdByName(string userName)
         {
+            log.Info("In UserController : GetIdByName(string userName)");
             try
             {
                 return Ok(await _iUserManagementHelper.GetIdByName(userName));
             }
             catch(Exception e)
             {
+                log.Error("Exception UserController: GetIdByName(string userName)" + e.Message);
                 return NotFound(e.Message);
             }
 

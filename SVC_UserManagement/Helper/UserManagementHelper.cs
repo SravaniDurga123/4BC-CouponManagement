@@ -5,6 +5,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using CouponManagementDBEntity.Repository;
 using SHR_Model.Models;
+using log4net;
+using System.Reflection;
+using System.IO;
+using log4net.Config;
 
 namespace UserManagement.Helper
 {
@@ -19,24 +23,30 @@ namespace UserManagement.Helper
     }
     public class UserManagementHelper : IUserManagementHelper
     {
+        private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         private readonly IUserRepository _iUserRepository;
         public UserManagementHelper(IUserRepository iUserRepository)
         {
             _iUserRepository = iUserRepository;
+            var logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
+            XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
         }
         /// <summary>
-        /// getting all users
+        /// displays all users
         /// </summary>
         /// <returns></returns>
         public async Task<List<UserDetails>> GetAllUsers()
         {
+            log.Info("In UserManagementHelper :   GetAllUsers()");
             try
             {
                 return await _iUserRepository.GetAllUsers();
             }
-            catch
+            catch(Exception e)
             {
+                log.Error("Exception UserManagementHelper: GetAllUsers()" + e.Message);
                 throw;
+
             }
         }
         /// <summary>
@@ -46,13 +56,16 @@ namespace UserManagement.Helper
         /// <returns></returns>
         public  async Task<int> GetIdByName(string userName)
         {
-           try
+            log.Info("In UserManagementHelper : GetIdByName(string userName) ");
+            try
             {
                 return await _iUserRepository.GetIdByName(userName);
             }
-            catch
+            catch (Exception e)
             {
+                log.Error("Exception UserManagementHelper: GetIdByName(string userName)" + e.Message);
                 throw;
+
             }
         }
 
@@ -63,14 +76,17 @@ namespace UserManagement.Helper
         /// <returns></returns>
         public async Task<UserDetails> GetUser(int userId)
         {
+            log.Info("In UserManagementHelper :  GetUser(int userId)");
             try
             {
                 return await _iUserRepository.GetUser(userId);
                
             }
-            catch
+            catch (Exception e)
             {
+                log.Error("Exception UserManagementHelper:GetUser(int userId)" + e.Message);
                 throw;
+
             }
         }
         /// <summary>
@@ -80,6 +96,7 @@ namespace UserManagement.Helper
         /// <returns></returns>
         public async Task<bool> UpdateUser(UserDetails user)
         {
+            log.Info("In UserManagementHelper :  UpdateUser(UserDetails user)");
             try
             {
                 bool id = await _iUserRepository.UpdateUser(user);
@@ -88,9 +105,11 @@ namespace UserManagement.Helper
                 else
                     return false;
             }
-            catch
+            catch (Exception e)
             {
+                log.Error("Exception UserManagementHelper: UpdateUser(UserDetails user)" + e.Message);
                 throw;
+
             }
         }
         /// <summary>
@@ -100,6 +119,7 @@ namespace UserManagement.Helper
         /// <returns></returns>
         public async Task<string> UserLogin(UserLogin user)
         {
+            log.Info("In UserManagementHelper :  UserLogin(UserLogin user)");
             try
             {
                 UserDetails userDetails = await _iUserRepository.UserLogin(user);
@@ -107,9 +127,12 @@ namespace UserManagement.Helper
                     return "Invalid Crendentails";
                 else return "successfully logged in";
             }
-            catch
+           
+             catch (Exception e)
             {
+                log.Error("Exception UserManagementHelper: UserLogin(UserLogin user)" + e.Message);
                 throw;
+
             }
         }
 /// <summary>
@@ -121,14 +144,17 @@ namespace UserManagement.Helper
 
         public async Task<string> UserRegister(UserDetails user)
         {
+            log.Info("In UserManagementHelper :   UserRegister(UserDetails user)");
             try
             {
               await _iUserRepository.UserRegister(user);
                 return "success";
             }
-            catch
+            catch (Exception e)
             {
+                log.Error("Exception UserManagementHelper:  UserRegister(UserDetails user)" + e.Message);
                 throw;
+
             }
         }
     }

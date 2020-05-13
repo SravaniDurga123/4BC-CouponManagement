@@ -1,8 +1,12 @@
 ﻿using CouponManagementDBEntity.Models;
+using log4net;
+using log4net.Config;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,10 +14,13 @@ namespace CouponManagementDBEntity.Repository
 {
   public  class CouponRepository:ICouponRepository
     {
+        private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         private readonly CouponManagementContext _couponManagementContext;
         public CouponRepository(CouponManagementContext couponManagementContext)
         {
             _couponManagementContext = couponManagementContext;
+            var logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
+            XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
         }
         /// <summary>
         /// To add a new coupon
@@ -22,6 +29,7 @@ namespace CouponManagementDBEntity.Repository
         /// <returns></returns>
         public async Task<bool> AddCoupon(CouponDetails coupon)
         {
+            log.Info("In CouponRepository :   AddCoupon(CouponDetails coupon)");
             try
             {
                 _couponManagementContext.CouponDetails.Add(coupon);
@@ -31,9 +39,11 @@ namespace CouponManagementDBEntity.Repository
                 else
                     return false;
             }
-            catch
+            catch (Exception e)
             {
+                log.Error("Exception CouponRepository:  AddCoupon(CouponDetails coupon)" + e.Message);
                 throw;
+
             }
         }
         /// <summary>
@@ -43,6 +53,7 @@ namespace CouponManagementDBEntity.Repository
         /// <returns></returns>
         public async Task<bool> DeleteCoupon(int couponId)
         {
+            log.Info("In CouponRepository :   DeleteCoupon(int couponId)");
             try
             {
                 CouponDetails coupon = _couponManagementContext.CouponDetails.Find(couponId);
@@ -53,9 +64,11 @@ namespace CouponManagementDBEntity.Repository
                 else
                     return false;
             }
-            catch
+            catch (Exception e)
             {
+                log.Error("Exception CouponRepository:  DeleteCoupon(int couponId)" + e.Message);
                 throw;
+
             }
         }
         /// <summary>
@@ -65,13 +78,16 @@ namespace CouponManagementDBEntity.Repository
         /// <returns></returns>
         public async Task<List<CouponDetails>> GetAllCoupon(int userId)
         {
+            log.Info("In CouponRepository :   GetAllCoupon(int userId)");
             try
             {
                 return await _couponManagementContext.CouponDetails.Where(e => e.UserId == userId).ToListAsync();
             }
-            catch(Exception e)
+            catch (Exception e)
             {
+                log.Error("Exception CouponRepository:  GetAllCoupon(int userId)" + e.Message);
                 throw;
+
             }
         }
         /// <summary>
@@ -81,14 +97,17 @@ namespace CouponManagementDBEntity.Repository
         /// <returns></returns>
         public async Task<CouponDetails> GetCouponById(int couponId)
         {
+            log.Info("In CouponRepository :  GetCouponById(int couponId)");
             try
             {
                 CouponDetails couponDetails = await _couponManagementContext.CouponDetails.FindAsync(couponId);
                 return couponDetails;
             }
-            catch
+            catch (Exception e)
             {
+                log.Error("Exception CouponRepository:  GetCouponById(int couponId)" + e.Message);
                 throw;
+
             }
         }
         /// <summary>
@@ -97,13 +116,16 @@ namespace CouponManagementDBEntity.Repository
         /// <returns></returns>
         public async Task<List<CouponDetails>> GetCoupons()
         {
+            log.Info("In CouponRepository :   GetCoupons()");
             try
             {
                 return await _couponManagementContext.CouponDetails.ToListAsync();
             }
-            catch
+            catch (Exception e)
             {
+                log.Error("Exception CouponRepository: GetCoupons()" + e.Message);
                 throw;
+
             }
         }
 
@@ -113,6 +135,7 @@ namespace CouponManagementDBEntity.Repository
         /// <returns></returns>
         public async Task<bool> Status()
         {
+            log.Info("In CouponRepository :   Status()");
             try
             {
                 List<CouponDetails> couponDetails = _couponManagementContext.CouponDetails.ToList();
@@ -136,9 +159,11 @@ namespace CouponManagementDBEntity.Repository
                 }
                 return true;
             }
-            catch
+            catch (Exception e)
             {
+                log.Error("Exception CouponRepository:  Status()" + e.Message);
                 throw;
+
             }
         }
         /// <summary>
@@ -148,6 +173,7 @@ namespace CouponManagementDBEntity.Repository
         /// <returns></returns>
         public async Task<bool> UpdateCoupon(CouponDetails coupon1)
         {
+            log.Info("In CouponRepository :  UpdateCoupon(CouponDetails coupon1)");
             try
             {
                 _couponManagementContext.CouponDetails.Update(coupon1);
@@ -157,9 +183,11 @@ namespace CouponManagementDBEntity.Repository
                 else
                     return false;
             }
-            catch
+            catch (Exception e)
             {
+                log.Error("Exception CouponRepository:  UpdateCoupon(CouponDetails coupon1)" + e.Message);
                 throw;
+
             }
 
 

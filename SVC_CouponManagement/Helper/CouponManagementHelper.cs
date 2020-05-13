@@ -4,7 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CouponManagementDBEntity.Repository;
-
+using log4net;
+using System.Reflection;
+using System.IO;
+using log4net.Config;
 
 namespace CouponManagement.Helper
 {
@@ -20,10 +23,13 @@ namespace CouponManagement.Helper
     }
     public class CouponManagementHelper : ICouponManagementHelper
     {
+        private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         private readonly ICouponRepository _iCoupounRepositoty;
         public CouponManagementHelper(ICouponRepository iCouponRepository)
         {
             _iCoupounRepositoty = iCouponRepository;
+            var logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
+            XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
         }
         /// <summary>
         /// adding coupon
@@ -32,6 +38,7 @@ namespace CouponManagement.Helper
         /// <returns></returns>
         public async Task<bool> AddCoupon(CouponDetails coupon)
         {
+            log.Info("In CouponManagementHelper :   AddCoupon(CouponDetails coupon)");
             try
             {
                 bool result = await _iCoupounRepositoty.AddCoupon(coupon);
@@ -40,9 +47,11 @@ namespace CouponManagement.Helper
                 else
                     return false;
             }
-            catch
+            catch (Exception e)
             {
+                log.Error("Exception CouponManagementHelper:  AddCoupon(CouponDetails coupon)" + e.Message);
                 throw;
+
             }
         }
         /// <summary>
@@ -52,6 +61,7 @@ namespace CouponManagement.Helper
         /// <returns></returns>
         public async Task<bool> DeleteCoupon(int couponId)
         {
+            log.Info("In CouponManagementHelper :  DeleteCoupon(int couponId)");
             try
             {
                 bool result = await _iCoupounRepositoty.DeleteCoupon(couponId);
@@ -60,9 +70,11 @@ namespace CouponManagement.Helper
                 else
                     return false;
             }
-            catch
+            catch (Exception e)
             {
+                log.Error("Exception CouponManagementHelper:  DeleteCoupon(int couponId)" + e.Message);
                 throw;
+
             }
         }
         /// <summary>
@@ -72,37 +84,46 @@ namespace CouponManagement.Helper
         /// <returns></returns>
         public async Task<List<CouponDetails>> GetAllCoupon(int userId)
         {
+            log.Info("In CouponManagementHelper : GetAllCoupon(int userId)");
             try
             {
                 return await _iCoupounRepositoty.GetAllCoupon(userId);
             }
-            catch
+            catch (Exception e)
             {
+                log.Error("Exception CouponManagementHelper:  GetAllCoupon(int userId)" + e.Message);
                 throw;
+
             }
         }
 
         public async Task<CouponDetails> GetCouponById(int couponId)
         {
+            log.Info("In CouponManagementHelper :    GetCouponById(int couponId)");
             try
             {
                 return await _iCoupounRepositoty.GetCouponById(couponId);
             }
-            catch
+            catch (Exception e)
             {
+                log.Error("Exception CouponManagementHelper:   GetCouponById(int couponId)" + e.Message);
                 throw;
+
             }
         }
 
         public async Task<List<CouponDetails>> GetCoupons()
         {
-           try
+            log.Info("In CouponManagementHelper :  GetCoupons()");
+            try
             {
                 return await _iCoupounRepositoty.GetCoupons();
             }
-            catch
+            catch (Exception e)
             {
+                log.Error("Exception CouponManagementHelper: GetCoupons()" + e.Message);
                 throw;
+
             }
         }
 
@@ -113,13 +134,16 @@ namespace CouponManagement.Helper
 
         public async Task<bool> Status()
         {
+            log.Info("In CouponManagementHelper :  Status()");
             try
             {
                 return await _iCoupounRepositoty.Status();
             }
-            catch
+            catch (Exception e)
             {
+                log.Error("Exception CouponManagementHelper: Status()" + e.Message);
                 throw;
+
             }
         }
         /// <summary>
@@ -130,6 +154,7 @@ namespace CouponManagement.Helper
 
         public async Task<bool> UpdateCoupon(CouponDetails coupon)
         {
+            log.Info("In CouponManagementHelper :  UpdateCoupon(CouponDetails coupon)");
             try
             {
                 bool result = await _iCoupounRepositoty.UpdateCoupon(coupon);
@@ -137,9 +162,11 @@ namespace CouponManagement.Helper
                     return true;
                 else return false;
             }
-            catch
+            catch (Exception e)
             {
+                log.Error("Exception CouponManagementHelper:  UpdateCoupon(CouponDetails coupon)" + e.Message);
                 throw;
+
             }
         }
     }

@@ -7,7 +7,7 @@
 <h1>CouponsByUserId</h1>
 
 <p>
-    <a asp-action="CouponRegister">Create New</a>
+    <a asp-action="CouponRegister">Create New User</a>
     <a asp-action="GetUserById" asp-controller="User">View Details</a>
    
 </p>
@@ -29,15 +29,15 @@
             <th>
                 @Html.DisplayNameFor(model => model.CouponExpiredDate)
             </th>
-            <th>
+            @*<th>
                 @Html.DisplayNameFor(model => model.CreateDate)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.UpdatedDate)
-            </th>
-            <th>
+            </th>*@
+            @*<th>
                 @Html.DisplayNameFor(model => model.UserId)
-            </th>
+            </th>*@
             <th></th>
         </tr>
     </thead>
@@ -60,15 +60,15 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.CouponExpiredDate)
                 </td>
-                <td>
+                @*<td>
                     @Html.DisplayFor(modelItem => item.CreateDate)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.UpdatedDate)
-                </td>
-                <td>
+                </td>*@
+                @*<td>
                     @Html.DisplayFor(modelItem => item.UserId)
-                </td>
+                </td>*@
                 <td>
                     @Html.ActionLink("Edit", "UpdateCoupon", new { id = item.CouponId }) |
                     @Html.ActionLink("Details", "GetCouponById", new { id = item.CouponId }) |
