@@ -33,11 +33,12 @@ namespace CouponManagement
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
-                { Title = "CouponManagement", Description = "Describes the Functionalities of Coupon", Version = "v1" });
+                { Title = "CouponManagement", Version = "v1" ,
+                    Description = "Provides Coupon Functionalities ,\r\n Repository Url:https://github.com/SravaniDurga123/4BC-CouponManagement.git"});
 
 
                 // Set the comments path for the Swagger JSON and UI.
-                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 c.IncludeXmlComments(xmlPath);
             });

@@ -105,3 +105,12 @@ F:\clone\4BC-CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.Assemb
 F:\clone\4BC-CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.AssemblyInfo.cs
 F:\clone\4BC-CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.dll
 F:\clone\4BC-CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.pdb
+G:\CouponManagementA\4BC-CouponManagement\SHR_Model\bin\Debug\netcoreapp3.1\SHR_Model.deps.json
+G:\CouponManagementA\4BC-CouponManagement\SHR_Model\bin\Debug\netcoreapp3.1\SHR_Model.dll
+G:\CouponManagementA\4BC-CouponManagement\SHR_Model\bin\Debug\netcoreapp3.1\SHR_Model.pdb
+G:\CouponManagementA\4BC-CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.csprojAssemblyReference.cache
+G:\CouponManagementA\4BC-CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.csproj.CoreCompileInputs.cache
+G:\CouponManagementA\4BC-CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.AssemblyInfoInputs.cache
+G:\CouponManagementA\4BC-CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.AssemblyInfo.cs
+G:\CouponManagementA\4BC-CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.dll
+G:\CouponManagementA\4BC-CouponManagement\SHR_Model\obj\Debug\netcoreapp3.1\SHR_Model.pdb
