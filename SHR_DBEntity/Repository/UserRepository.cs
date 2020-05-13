@@ -138,11 +138,7 @@ namespace UserManagement.Helper
             log.Info("In UserRepository :  UserRegister(UserDetails user)");
             try
             {
-                ////int uid = user.UserId;
-                ////string uname = user.UserName;
-                ////var param = new SqlParameter("@UserId", uid);
-                ////var param1 = new SqlParameter("@UserName", uname);
-               // _couponManagementContext.Database.ExecuteSqlCommand("spUserRegister", param,param1);
+               
                  _couponManagementContext.UserDetails.Add(user);
                 var id = await _couponManagementContext.SaveChangesAsync();
                 if (id > 0)

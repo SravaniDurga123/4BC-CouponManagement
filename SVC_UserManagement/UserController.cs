@@ -42,14 +42,16 @@ namespace UserManagement
         /// <returns></returns>
         [HttpPost]
         [Route("UserRegister")]
-        [Produces( "application/json")]
+       // [Produces( "application/json")]
+        [ProducesResponseType(200, Type = typeof(bool))]
+        [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> UserRegister(UserDetails user)
         {
             log.Info("In UserController :  UserRegister(UserDetails user)");
 
             try
             {
-              
+                    //Register new user passing object as parameter 
                     await _iUserManagementHelper.UserRegister(user);
                   
                     return Ok("success");
@@ -68,6 +70,8 @@ namespace UserManagement
         /// <returns></returns>
         [HttpPost]
         [Route("UserLogin")]
+        [ProducesResponseType(200, Type = typeof(string))]
+        [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> UserLogin(UserLogin user)
         {
             log.Info("In UserController : UserLogin(UserLogin user)");
@@ -90,11 +94,14 @@ namespace UserManagement
         /// <returns></returns>
         [HttpGet]
         [Route("GetUser/{userId}")]
+        [ProducesResponseType(200, Type = typeof(UserDetails))]
+        [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> GetUser(int userId)
         {
             log.Info("In UserController : GetUser(int userId)");
             try
             {
+                //Checking userid in user and retriveing appropritate data
                 UserDetails user=   await _iUserManagementHelper.GetUser(userId);
 
                 return Ok(user);
@@ -112,11 +119,14 @@ namespace UserManagement
         /// <returns></returns>
         [HttpPut]
         [Route("UpdateUser")]
+        [ProducesResponseType(200, Type = typeof(bool))]
+        [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> UpdateUser(UserDetails user)
         {
             log.Info("In UserController : UpdateUser(UserDetails user)");
             try
             {
+                //to modify appropriate data of an user
                await _iUserManagementHelper.UpdateUser(user);
                 return Ok();
             }
@@ -132,11 +142,14 @@ namespace UserManagement
         /// <returns></returns>
         [HttpGet]
         [Route("GetAllUsers")]
+        [ProducesResponseType(200, Type = typeof(List<UserDetails>))]
+        [ProducesResponseType(404, Type = typeof(string))]
         public async Task<IActionResult> GetAllUsers()
         {
             log.Info("In UserController :  GetAllUsers()");
             try
             {
+                //retriveing all users present
                return Ok( await _iUserManagementHelper.GetAllUsers());
             }
             catch(Exception e)
@@ -153,11 +166,15 @@ namespace UserManagement
         /// <returns></returns>
         [HttpGet]
         [Route("GetIdByName/{userName}")]
+        [ProducesResponseType(200, Type = typeof(int))]
+        [ProducesResponseType(404, Type = typeof(string))]
+
         public async Task<IActionResult> GetIdByName(string userName)
         {
             log.Info("In UserController : GetIdByName(string userName)");
             try
             {
+                //to retrive data based on  username 
                 return Ok(await _iUserManagementHelper.GetIdByName(userName));
             }
             catch(Exception e)

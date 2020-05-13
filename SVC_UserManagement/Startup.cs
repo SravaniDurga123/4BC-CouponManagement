@@ -29,7 +29,6 @@ namespace UserManagement
             services.AddMvc();
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IUserManagementHelper, UserManagementHelper>();
-            //services.AddSingleton<IUserRepository, UserRepository>();
             services.AddTransient<CouponManagementContext>();
             services.AddControllers();
             services.AddControllersWithViews();
@@ -37,7 +36,7 @@ namespace UserManagement
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
-                { Title = "UserManagement", Description = "Describes the Functionalities of User", Version = "v1" });
+                { Title = "UserManagement", Description = "Describes the Functionalities of User, \r\n: Repository Url:https://github.com/SravaniDurga123/4BC-CouponManagement.git", Version = "v1" });
 
 
                 // Set the comments path for the Swagger JSON and UI.
@@ -54,9 +53,9 @@ namespace UserManagement
             {
                 app.UseDeveloperExceptionPage();
             }
-            //loggerFactory.AddLog4Net();
+           
             app.UseHttpsRedirection();
-            //app.UseMvc();
+            
             app.UseRouting();
             app.UseSwagger();
             app.UseSwaggerUI(c =>
@@ -70,12 +69,7 @@ namespace UserManagement
                 endpoints.MapControllers();
 
             });
-            //app.UseEndpoints(endpoints =>
-            //{
-            //    endpoints.MapControllerRoute(
-            //        name: "default",
-            //        pattern: "{controller=Home}/{action=Index}/{id?}");
-            //});
+           
         }
     }
 }

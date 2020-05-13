@@ -22,11 +22,7 @@ namespace UserManagement
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                    //.ConfigureLogging((hostingContext, logging) =>
-                    //{
-                    //    logging.AddLog4Net();
-                    //    logging.SetMinimumLevel(LogLevel.Information);
-                    //});
+                   
                 });
     }
 

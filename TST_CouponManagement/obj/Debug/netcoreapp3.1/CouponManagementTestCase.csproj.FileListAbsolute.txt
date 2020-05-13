@@ -1479,3 +1479,4 @@ D:\CouponManagement\4BC-CouponManagement\TST_CouponManagement\bin\Debug\netcorea
 F:\clone\4BC-CouponManagement\TST_CouponManagement\bin\Debug\netcoreapp3.1\log4net.config
 F:\clone\4BC-CouponManagement\TST_CouponManagement\bin\Debug\netcoreapp3.1\UserManagement.xml
 F:\clone\4BC-CouponManagement\TST_CouponManagement\bin\Debug\netcoreapp3.1\CouponManagement.xml
+D:\CouponManagement\4BC-CouponManagement\TST_CouponManagement\bin\Debug\netcoreapp3.1\log4net.config
