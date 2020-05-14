@@ -18,6 +18,7 @@ using Microsoft.Extensions.Logging;
 using System.Reflection;
 using System.IO;
 using UserManagement.Extensions;
+using UserManagement.AuthenticationDemo;
 
 namespace UserManagement
 {
@@ -41,7 +42,8 @@ namespace UserManagement
             services.AddTransient<CouponManagementContext>();
             services.AddControllers();
             services.AddControllersWithViews();
-
+            services.AddAuthentication("Basic").AddScheme<BasicAuthenticationOptions,CustomAuthenticationHandler>("Basic", null);
+            services.AddSingleton<ICustomAuthenticationManager,CustomAuthenticationManager>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
@@ -67,6 +69,9 @@ namespace UserManagement
             app.ConfigureExceptionHandler();
 
             app.UseRouting();
+            app.UseAuthentication();
+            app.UseAuthorization();
+
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {

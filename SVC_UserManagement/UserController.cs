@@ -8,6 +8,7 @@ using CouponManagementDBEntity.Models;
 using CouponManagementDBEntity.Repository;
 using log4net;
 using log4net.Config;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -20,6 +21,7 @@ namespace UserManagement
 {
     [Route("api/v1")]
     [ApiController]
+   // [Authorize]
     public class UserController : Controller
     {
         private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);

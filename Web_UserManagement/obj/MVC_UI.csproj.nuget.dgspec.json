@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\CouponManagement\\4BC-CouponManagement\\Web_UserManagement\\MVC_UI.csproj": {}
+    "D:\\CouponManagement3\\4BC-CouponManagement\\Web_UserManagement\\MVC_UI.csproj": {}
   },
   "projects": {
-    "F:\\CouponManagement\\4BC-CouponManagement\\Web_UserManagement\\MVC_UI.csproj": {
+    "D:\\CouponManagement3\\4BC-CouponManagement\\Web_UserManagement\\MVC_UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\CouponManagement\\4BC-CouponManagement\\Web_UserManagement\\MVC_UI.csproj",
+        "projectUniqueName": "D:\\CouponManagement3\\4BC-CouponManagement\\Web_UserManagement\\MVC_UI.csproj",
         "projectName": "MVC_UI",
-        "projectPath": "F:\\CouponManagement\\4BC-CouponManagement\\Web_UserManagement\\MVC_UI.csproj",
-        "packagesPath": "C:\\Users\\Maragani jagadeesh\\.nuget\\packages\\",
-        "outputPath": "F:\\CouponManagement\\4BC-CouponManagement\\Web_UserManagement\\obj\\",
+        "projectPath": "D:\\CouponManagement3\\4BC-CouponManagement\\Web_UserManagement\\MVC_UI.csproj",
+        "packagesPath": "C:\\Users\\madhurip\\.nuget\\packages\\",
+        "outputPath": "D:\\CouponManagement3\\4BC-CouponManagement\\Web_UserManagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Maragani jagadeesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\madhurip\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

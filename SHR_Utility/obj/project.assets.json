@@ -5233,19 +5233,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Maragani jagadeesh\\.nuget\\packages\\": {}
+    "C:\\Users\\madhurip\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\CouponManagement\\4BC-CouponManagement\\SHR_Utility\\SHR_Utility.csproj",
+      "projectUniqueName": "D:\\CouponManagement3\\4BC-CouponManagement\\SHR_Utility\\SHR_Utility.csproj",
       "projectName": "SHR_Utility",
-      "projectPath": "F:\\CouponManagement\\4BC-CouponManagement\\SHR_Utility\\SHR_Utility.csproj",
-      "packagesPath": "C:\\Users\\Maragani jagadeesh\\.nuget\\packages\\",
-      "outputPath": "F:\\CouponManagement\\4BC-CouponManagement\\SHR_Utility\\obj\\",
+      "projectPath": "D:\\CouponManagement3\\4BC-CouponManagement\\SHR_Utility\\SHR_Utility.csproj",
+      "packagesPath": "C:\\Users\\madhurip\\.nuget\\packages\\",
+      "outputPath": "D:\\CouponManagement3\\4BC-CouponManagement\\SHR_Utility\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Maragani jagadeesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\madhurip\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
