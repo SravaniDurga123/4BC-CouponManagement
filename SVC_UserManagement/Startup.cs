@@ -17,6 +17,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.Extensions.Logging;
 using System.Reflection;
 using System.IO;
+using UserManagement.Extensions;
 
 namespace UserManagement
 {
@@ -26,7 +27,15 @@ namespace UserManagement
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            services.AddMvcCore(
+              config =>
+              {
+
+                  config.Filters.Add(typeof(CustomExceptionFilter));
+
+              }
+            );
+           // services.AddMvc();
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IUserManagementHelper, UserManagementHelper>();
             services.AddTransient<CouponManagementContext>();
@@ -55,7 +64,8 @@ namespace UserManagement
             }
            
             app.UseHttpsRedirection();
-            
+            app.ConfigureExceptionHandler();
+
             app.UseRouting();
             app.UseSwagger();
             app.UseSwaggerUI(c =>

@@ -13,6 +13,7 @@ using CouponManagement.Helper;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
 using System.IO;
+using CouponManagement.Extensions;
 
 namespace CouponManagement
 {
@@ -24,7 +25,15 @@ namespace CouponManagement
         {
             //services.AddTransient<ICouponRepository,CouponRepository>();
             //services.AddTransient<ICouponManagementHelper, CouponManagementHelper>();
-            services.AddMvc();
+            //services.AddMvc();
+            services.AddMvcCore(
+             config =>
+             {
+
+                 config.Filters.Add(typeof(CustomExceptionFilter));
+
+             }
+           );
             services.AddTransient<ICouponRepository, CouponRepository>();
             services.AddTransient<ICouponManagementHelper, CouponManagementHelper>();
             services.AddTransient<CouponManagementContext>();
@@ -51,6 +60,7 @@ namespace CouponManagement
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.ConfigureExceptionHandler();
 
             app.UseRouting();
             app.UseSwagger();
