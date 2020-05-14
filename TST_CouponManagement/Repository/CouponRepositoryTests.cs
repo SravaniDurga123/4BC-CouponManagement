@@ -75,7 +75,7 @@ namespace CouponManagementTestCase.Repository
             await mockCouponManagementContext.SaveChangesAsync();
             mockCouponManagementContext.CouponDetails.AddRange(mockCouponData.couponDetails);
             await mockCouponManagementContext.SaveChangesAsync();
-            var result = await couponRepository.DeleteCoupon(10);
+            var result = await couponRepository.DeleteCoupon(20);
             Assert.That(result, Is.Not.Null);
             Assert.That(result,Is.EqualTo(true));
 
@@ -89,13 +89,7 @@ namespace CouponManagementTestCase.Repository
         [Test]
         public async Task UpdateCoupon_Valid_Returns()
         {
-            //mockCouponManagementContext.UserDetails.AddRange(mockUserDatas.userDetails);
-            //await mockCouponManagementContext.SaveChangesAsync();
-            //var getCouponId = await couponRepository.UpdateCoupon(coupon);
-            //coupon.CouponNumber = "rtyu456";
-            //var updateCoupon = await couponRepository.UpdateCoupon(coupon);
-            //CouponDetails coupon1 = await couponRepository.UpdateCoupon();
-            //Assert.AreSame(coupon, coupon1);
+          
             mockCouponManagementContext.UserDetails.AddRange(mockUserDatas.userDetails);
             await mockCouponManagementContext.SaveChangesAsync();
             mockCouponManagementContext.CouponDetails.AddRange(mockCouponData.couponDetails);
@@ -116,7 +110,34 @@ namespace CouponManagementTestCase.Repository
             Assert.That(updateCoupon, Is.Not.Null);
             Assert.That(updateCoupon, Is.EqualTo(true));
         }
-
-
+        /// <summary>
+        /// To Test the GetCouponById
+        /// </summary>
+        /// <returns></returns>
+        [Test]
+        public async Task GetCouponById()
+        {
+            mockCouponManagementContext.UserDetails.AddRange(mockUserDatas.userDetails);
+            await mockCouponManagementContext.SaveChangesAsync();
+            mockCouponManagementContext.CouponDetails.AddRange(mockCouponData.couponDetails);
+            await mockCouponManagementContext.SaveChangesAsync();
+            var coupon = await couponRepository.GetCouponById(20);
+            Assert.That(coupon, Is.Not.Null);
+            Assert.That(coupon.CouponId, Is.EqualTo(20));
+        }
+        /// <summary>
+        /// To Test the GetCoupons
+        /// </summary>
+        /// <returns></returns>
+        [Test]
+        public async Task GetCopouns()
+        {
+            mockCouponManagementContext.UserDetails.AddRange(mockUserDatas.userDetails);
+            await mockCouponManagementContext.SaveChangesAsync();
+            mockCouponManagementContext.CouponDetails.AddRange(mockCouponData.couponDetails);
+            await mockCouponManagementContext.SaveChangesAsync();
+            var coupon = await couponRepository.GetCoupons();
+            Assert.That(coupon, Is.Not.Null);
+        }
     }
 }

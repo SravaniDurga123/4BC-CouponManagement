@@ -106,7 +106,28 @@ namespace CouponManagementTestCase.Helper
             Assert.That(result, Is.Not.Null);
             Assert.That(result, Is.EqualTo(true));
         }
-
-
+        /// <summary>
+        /// To Test the GetCouponById
+        /// </summary>
+        /// <returns></returns>
+        [Test]
+        public async Task GetCouponById()
+        {
+            mockCouponRepository.Setup(d => d.GetCouponById(It.IsAny<int>())).ReturnsAsync(new CouponDetails());
+            var coupon = await couponManagementHelper.GetCouponById(20);
+            Assert.That(coupon, Is.Not.Null);
+            
+        }
+        /// <summary>
+        /// To Test the GetCoupons
+        /// </summary>
+        /// <returns></returns>
+        [Test]
+        public async Task GetCoupons()
+        {
+            mockCouponRepository.Setup(d => d.GetCoupons()).ReturnsAsync(new List<CouponDetails>());
+            var coupon = await couponManagementHelper.GetCoupons();
+            Assert.That(coupon, Is.Not.Null);
+        }
     }
 }

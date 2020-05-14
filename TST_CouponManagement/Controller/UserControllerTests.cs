@@ -37,17 +37,7 @@ namespace CouponManagementTestCase.Controller
            var result= await userController.GetAllUsers() as OkObjectResult;
             Assert.That(result, Is.Not.Null);
         }
-        /// <summary>
-        /// To Test the Exception for GetAllUsers
-        /// </summary>
-        /// <returns></returns>
-        //[Test]
-        //public async Task GetAllUsers_Invalid_ReturnsNull()
-        //{
-        //    mockUserManagementHelper.Setup(d => d.GetAllUsers()).ReturnsAsync((List<UserDetails>)(null));
-        //    var result = await userController.GetAllUsers() as OkObjectResult;
-        //    Assert.That(result.StatusCode, Is.EqualTo(200));
-        //}
+        
         /// <summary>
         /// to test the GetUser
         /// </summary>
@@ -59,17 +49,7 @@ namespace CouponManagementTestCase.Controller
             var result = await userController.GetUser(10) as OkObjectResult;
             Assert.That(result, Is.Not.Null);
         }
-        /// <summary>
-        /// To test GetUsers
-        /// </summary>
-        /// <returns></returns>
-        [Test]
-        public async Task GetUser_Invalid_ReturnsNull()
-         {
-            mockUserManagementHelper.Setup(d => d.GetUser(It.IsAny<int>())).ReturnsAsync(new UserDetails());
-            var result = await userController.GetUser(100) as OkObjectResult;
-            Assert.That(result.StatusCode,Is.EqualTo(404));
-        }
+       
         [Test]
         public async Task UserLogin_Valid_Returns()
         {

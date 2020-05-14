@@ -67,19 +67,19 @@ namespace CouponManagementTestCase.Helper
         /// to test user login is valid or not
         /// </summary>
         /// <returns></returns>
-        //[Test]
-        //public async Task UserLogin_Valid_Returns()
-        //{
-        //    mockUserRepository.Setup(d => d.UserLogin(It.IsAny<string>())).ReturnsAsync(default(string));
-        //    var result = await userManagementHelper.UserLogin(new UserLogin()
-        //    {
-        //        UserName = "hello",
-        //        UserPassword = "hello"
-        //    });
-        //    Assert.That(result, Is.Not.Null);
-        //    Assert.That(result, Is.EqualTo(true));
+        [Test]
+        public async Task UserLogin_Valid_Returns()
+        {
+            mockUserRepository.Setup(d => d.UserLogin(It.IsAny<UserLogin>())).ReturnsAsync(new UserDetails());
+            var result = await userManagementHelper.UserLogin(new UserLogin()
+            {
+                UserName = "hello",
+                UserPassword = "hello"
+            });
+            Assert.That(result, Is.Not.Null);
+            Assert.That(result, Is.EqualTo("successfully logged in"));
 
-        //}
+        }
         /// <summary>
         /// to test whether the user can register or not
         /// </summary>
@@ -128,7 +128,16 @@ namespace CouponManagementTestCase.Helper
             Assert.That(result, Is.Not.Null);
             Assert.That(result, Is.EqualTo(true));
         }
-
+        /// <summary>
+        /// To Test th GetIdByName
+        /// </summary>
+        [Test]
+        public async Task GetIdByName_Valid_Returns()
+        {
+            mockUserRepository.Setup(d => d.GetIdByName(It.IsAny<string>()));
+            var id =await userManagementHelper.GetIdByName("hello1");
+            Assert.That(id, Is.Not.Null);
+        }
     }
 
 

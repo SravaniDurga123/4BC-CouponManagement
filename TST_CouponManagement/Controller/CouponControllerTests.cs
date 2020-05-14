@@ -35,17 +35,7 @@ namespace CouponManagementTestCase.Controller
             var result = await couponController.GetAllCoupons(10);
             Assert.That(result, Is.Not.Null);
         }
-        /// <summary>
-        /// To Test the Exception for GetAllCoupon
-        /// </summary>
-        /// <returns></returns>
-        [Test]
-        public async Task GetAllCoupon_InValid_RetunsNull()
-        {
-            mockCouponManagementHelper.Setup(d => d.GetAllCoupon(It.IsAny<int>())).ReturnsAsync((List<CouponDetails>)(null));
-            var result = await couponController.GetAllCoupons(10) ;
-            Assert.That(result, Is.Null);
-        }
+       
         /// <summary>
         /// to test exception of Adding coupon
         /// </summary>
@@ -101,6 +91,27 @@ namespace CouponManagementTestCase.Controller
             Assert.That(result, Is.Not.Null);
             Assert.That(result.StatusCode, Is.EqualTo(200));
         }
+        /// <summary>
+        /// To Test the GetCouponById
+        /// </summary>
+        /// <returns></returns>
+        [Test]
+        public async Task GetCouponById_Valid_Returns()
+        {
+            mockCouponManagementHelper.Setup(d => d.GetCouponById(It.IsAny<int>())).ReturnsAsync(new CouponDetails());
+            var coupon = await couponController.GetCouponById(20) as OkObjectResult;
+            Assert.That(coupon.StatusCode, Is.EqualTo(200));
 
+        }
+        /// <summary>
+        /// To Test the GetCoupons
+        /// </summary>
+        [Test]
+        public async Task GetCoupons_Valid_Returns()
+        {
+            mockCouponManagementHelper.Setup(d => d.GetCoupons()).ReturnsAsync(new List<CouponDetails>());
+            var coupon = await couponController.GetCoupons() as OkObjectResult;
+            Assert.That(coupon.StatusCode, Is.EqualTo(200));
+        }
     }
 }

@@ -9264,19 +9264,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\91703\\.nuget\\packages\\": {}
+    "C:\\Users\\Maragani jagadeesh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CouponManagement\\4BC-CouponManagement\\SVC_UserManagement\\UserManagement.csproj",
+      "projectUniqueName": "F:\\CouponManagement\\4BC-CouponManagement\\SVC_UserManagement\\UserManagement.csproj",
       "projectName": "UserManagement",
-      "projectPath": "D:\\CouponManagement\\4BC-CouponManagement\\SVC_UserManagement\\UserManagement.csproj",
-      "packagesPath": "C:\\Users\\91703\\.nuget\\packages\\",
-      "outputPath": "D:\\CouponManagement\\4BC-CouponManagement\\SVC_UserManagement\\obj\\",
+      "projectPath": "F:\\CouponManagement\\4BC-CouponManagement\\SVC_UserManagement\\UserManagement.csproj",
+      "packagesPath": "C:\\Users\\Maragani jagadeesh\\.nuget\\packages\\",
+      "outputPath": "F:\\CouponManagement\\4BC-CouponManagement\\SVC_UserManagement\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\91703\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Maragani jagadeesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9289,11 +9289,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\CouponManagement\\4BC-CouponManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj": {
-              "projectPath": "D:\\CouponManagement\\4BC-CouponManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj"
+            "F:\\CouponManagement\\4BC-CouponManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj": {
+              "projectPath": "F:\\CouponManagement\\4BC-CouponManagement\\SHR_DBEntity\\CouponManagementDBEntity.csproj"
             },
-            "D:\\CouponManagement\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj": {
-              "projectPath": "D:\\CouponManagement\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj"
+            "F:\\CouponManagement\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj": {
+              "projectPath": "F:\\CouponManagement\\4BC-CouponManagement\\SHR_Model\\SHR_Model.csproj"
             }
           }
         }

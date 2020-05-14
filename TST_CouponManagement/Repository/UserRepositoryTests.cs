@@ -107,32 +107,32 @@ namespace CouponManagementTestCase.Repository
             Assert.That(result, Is.Not.Null);
             Assert.AreEqual(result, true);
         }
+        /// <summary>
+        /// To Test the User Login
+        /// </summary>
+        /// <returns></returns>
         [Test]
         public async Task UserLogin_Valid()
         {
            
                 mockCouponManagementContext.UserDetails.AddRange(mockUserDatas.userDetails);
                 await mockCouponManagementContext.SaveChangesAsync();
-
                 var user = new UserLogin { UserName = "hello1", UserPassword = "hello1" };
                 var result = userRepository.UserLogin(user);
-               
-                Assert.NotNull(result);
-
-            
+                Assert.NotNull(result);   
         }
-        [Test]
-        public async Task UserLogin_Invalid()
+        /// <summary>
+        /// To Test the GetIdByName
+        /// </summary>
+       [Test]
+       public async Task GetIdByName()
         {
-            
-                mockCouponManagementContext.UserDetails.AddRange(mockUserDatas.userDetails);
-                await mockCouponManagementContext.SaveChangesAsync();
-                var user = new UserLogin { UserName = "hello1", UserPassword = "hello1" };
-               var result = userRepository.UserLogin(user);
-            Assert.That(result, Is.Null);
+            mockCouponManagementContext.UserDetails.AddRange(mockUserDatas.userDetails);
+            await mockCouponManagementContext.SaveChangesAsync();
+            var id = userRepository.GetIdByName("hello1");
+            Assert.That(id, Is.Not.Null);
 
         }
-
     }
 
 }

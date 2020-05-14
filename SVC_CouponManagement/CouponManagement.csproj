@@ -6,7 +6,7 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <NoWarn>1701;1702;1591</NoWarn>
-    <DocumentationFile>D:\CouponManagement\4BC-CouponManagement\SVC_CouponManagement\CouponManagement.xml</DocumentationFile>
+    <DocumentationFile>F:\CouponManagement\4BC-CouponManagement\SVC_CouponManagement\CouponManagement.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
